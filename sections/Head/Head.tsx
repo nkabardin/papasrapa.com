@@ -1,13 +1,13 @@
-import Head from 'next/head'
+import HeadTag from 'next/head'
 import { data } from "../data.js"
 
 type Props = {
     lang: "ru" | "eng"
 }
 
-export const Header = ({ lang = "ru" }: Props) => {
+export const Head = ({ lang = "ru" }: Props) => {
     return (
-        <Head>
+        <HeadTag>
             <meta charSet="utf-8" />
             <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,6 +22,6 @@ export const Header = ({ lang = "ru" }: Props) => {
             <meta name="format-detection" content="telephone=no" />
             <meta http-equiv="x-dns-prefetch-control" content="on" />
             <link rel="shortcut icon" href={data.icon} type="image/x-icon" />
-        </Head>
+        </HeadTag>
     );
 }

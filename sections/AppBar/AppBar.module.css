@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  color: var(--white);
+  background-color: var(--black);
+  padding: 1rem;
+}
+.wrapper {
+  max-width: var(--max-width);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.title {
+  text-align: center;
+}
+
+.social a:first-of-type > img {
+  margin-right: 1rem;
+}
+.social img {
+  width: 30px;
+  height: 30px;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .title {
+    order: 1;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
