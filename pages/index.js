@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { Head } from "../sections/Head";
 import { AppBar } from "../sections/AppBar";
+import { Footer } from "../sections/Footer";
 
 export default function Home() {
   return (
@@ -9,8 +10,7 @@ export default function Home() {
       <Head />
       <AppBar />
       <main className={styles.main}></main>
-
-      <footer className={styles.footer}></footer>
+      <Footer />
     </div>
   );
 }
