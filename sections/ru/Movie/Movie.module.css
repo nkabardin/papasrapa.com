@@ -1,0 +1,135 @@
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 900px;
+  max-height: 1042px;
+  height: 100vh;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  padding-top: 12px;
+}
+.wrapper {
+  position: relative;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* VIDEO */
+.video_wrapper {
+  position: absolute;
+  width: 100%;
+  background: var(--black);
+  height: calc(100% * 0.5625);
+  max-width: 1200px;
+  z-index: 40;
+  bottom: 0;
+  /* width: 1191px;
+  height: 711px; */
+}
+.video_wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* TEXT */
+.text {
+  position: absolute;
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  font-family: var(--font-akrobat);
+  z-index: 20;
+}
+.text_top {
+  max-width: 610px;
+  left: 580px;
+  top: 70px;
+}
+
+.title {
+  font-size: 100px;
+  line-height: 1.55;
+  font-weight: bold;
+  font-family: var(--font-pt-serif);
+  z-index: 40;
+  position: absolute;
+  text-align: center;
+}
+.title_top {
+  left: -210px;
+  top: 65px;
+}
+
+/* MEDIA */
+@media screen and (max-width: 1680px) {
+  .title_top {
+    max-width: 640px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 70px;
+  }
+  .title_top {
+    left: 16px;
+    top: -30px;
+  }
+  .text_top {
+    left: 380px;
+    top: 66px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .container {
+    min-height: 980px;
+  }
+  .title_top {
+    top: 55px;
+  }
+  .text_top {
+    left: 30px;
+    top: 231px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    min-height: 780px;
+  }
+  .title {
+    font-size: 50px;
+  }
+  .title_top {
+    top: 25px;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .text_top {
+    max-width: 350px;
+    left: 60px;
+    top: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    min-height: 800px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .title_top {
+    /* left: -297px; */
+    top: 40px;
+  }
+  .text_top {
+    left: 30px;
+    top: 140px;
+  }
+}
