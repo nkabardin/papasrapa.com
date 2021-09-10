@@ -8,12 +8,6 @@ export const Gallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
-
   const openLightbox = useCallback(index => {
     setCurrentImage(index);
     setViewerIsOpen(true);
@@ -33,7 +27,7 @@ export const Gallery = () => {
           objectFit="cover"
           objectPosition="center"
           quality={100}
-          unoptimized={isLoaded}
+          unoptimized
           alt={images[0].caption}
           onClick={() => openLightbox(0)}
         />
@@ -46,6 +40,7 @@ export const Gallery = () => {
             objectPosition="center"
             alt={images[1].caption}
             onClick={() => openLightbox(1)}
+            unoptimized
           />
           <Image
             src={images[2].src}
@@ -55,6 +50,7 @@ export const Gallery = () => {
             objectPosition="center"
             alt={images[2].caption}
             onClick={() => openLightbox(2)}
+            unoptimized
           />
           <Image
             src={images[3].src}
@@ -64,6 +60,7 @@ export const Gallery = () => {
             objectPosition="center"
             alt={images[3].caption}
             onClick={() => openLightbox(3)}
+            unoptimized
           />
           <Image
             src={images[4].src}
@@ -73,6 +70,7 @@ export const Gallery = () => {
             objectPosition="center"
             alt={images[4].caption}
             onClick={() => openLightbox(4)}
+            unoptimized
           />
         </div>
       </div>
@@ -87,6 +85,7 @@ export const Gallery = () => {
             objectPosition="center"
             alt={images[5].caption}
             onClick={() => openLightbox(5)}
+            unoptimized
           />
           <Image
             src={images[6].src}
@@ -96,6 +95,7 @@ export const Gallery = () => {
             objectPosition="center"
             alt={images[6].caption}
             onClick={() => openLightbox(6)}
+            unoptimized
           />
           <Image
             src={images[7].src}
@@ -105,6 +105,7 @@ export const Gallery = () => {
             objectPosition="center"
             alt={images[7].caption}
             onClick={() => openLightbox(7)}
+            unoptimized
           />
           <Image
             src={images[8].src}
@@ -114,6 +115,7 @@ export const Gallery = () => {
             objectPosition="center"
             alt={images[8].caption}
             onClick={() => openLightbox(8)}
+            unoptimized
           />
         </div>
         <Image
@@ -124,6 +126,7 @@ export const Gallery = () => {
           objectPosition="center"
           alt={images[9].caption}
           onClick={() => openLightbox(9)}
+          unoptimized
         />
       </div>
 
@@ -136,6 +139,7 @@ export const Gallery = () => {
           objectPosition="center"
           alt={images[10].caption}
           onClick={() => openLightbox(10)}
+          unoptimized
         />
         <Image
           src={images[11].src}
@@ -143,9 +147,9 @@ export const Gallery = () => {
           height={650}
           objectFit="cover"
           objectPosition="center"
-          unoptimized={isLoaded}
           alt={images[11].caption}
           onClick={() => openLightbox(11)}
+          unoptimized
         />
         <Image
           src={images[12].src}
@@ -155,6 +159,7 @@ export const Gallery = () => {
           objectPosition="center"
           alt={images[12].caption}
           onClick={() => openLightbox(12)}
+          unoptimized
         />
       </div>
 

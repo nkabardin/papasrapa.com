@@ -43,6 +43,7 @@ export const AppBar = ({ lang = "en" }) => {
               alt="Instagram"
               width={32}
               height={32}
+              unoptimized
             />
           </a>
           <a href="https://t.me/papasrapa" rel="noopener" title="Telegram">
@@ -51,6 +52,7 @@ export const AppBar = ({ lang = "en" }) => {
               alt="Telegram"
               width={32}
               height={32}
+              unoptimized
             />
           </a>
           <a
