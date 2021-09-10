@@ -94,7 +94,7 @@ export const Credits = () => {
 
       <div className={style.group}>
         <div className={style.sub_title}>Trailer music mixing / mastering</div>
-        <p>Dmitriy "Astropilot" Redko</p>
+        <p>Dmitriy &quot;Astropilot&quot; Redko</p>
       </div>
 
       <div className={style.group}>
@@ -150,9 +150,20 @@ export const Credits = () => {
       </div>
 
       <div className={style.group}>
+        <div className={style.sub_title}>Subtitles</div>
+        <p>Tatiana Lytasova</p>
+        <p>Ekaterina Krupina</p>
+      </div>
+
+      <div className={style.group}>
         <div className={style.sub_title}>Design</div>
         <p>Oleg Pospelov</p>
         <p>Anastasia Mew</p>
+      </div>
+
+      <div className={style.group}>
+        <div className={style.sub_title}>Software Development</div>
+        <p>Anton Kuptsov</p>
       </div>
 
       <div className={style.group}>
@@ -166,6 +177,7 @@ export const Credits = () => {
         <p>Artyom Kryptogen</p>
         <p>Gleb Glonti</p>
         <p>Maksim Ivanov</p>
+        <p>Andrey Paperniy</p>
       </div>
     </div>
   );
