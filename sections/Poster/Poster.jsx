@@ -52,7 +52,7 @@ export const Poster = () => {
               unoptimized
             />
           </div>
-          <div className={style.text}>
+          <div className={style.text} id="story">
             <div className={style.title}>A Story</div>
             <p>
               <strong>PAPA SRAPA</strong> is not a typical music documentary,

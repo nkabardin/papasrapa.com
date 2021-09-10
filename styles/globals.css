@@ -52,6 +52,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(/assets/back_02_small.jpg);
+  scroll-behavior: smooth;
 }
 
 a {

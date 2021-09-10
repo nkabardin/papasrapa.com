@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import style from "./Gallery.module.css";
 import { images } from "./data";
 import Carousel, { Modal, ModalGateway } from "react-images";
+import { menuLinks } from "../../app.config";
 
 export const Gallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -18,7 +19,7 @@ export const Gallery = () => {
   };
 
   return (
-    <div className={style.container}>
+    <div className={style.container} id={menuLinks.GALLERY}>
       <div className={style.wrapper}>
         <Image
           src={images[0].src}

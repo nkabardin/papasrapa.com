@@ -1,8 +1,9 @@
+import { menuLinks } from "../../app.config";
 import style from "./Teaser.module.css";
 
 export const Teaser = () => {
   return (
-    <section className={style.container}>
+    <section className={style.container} id={menuLinks.TRAILER}>
       <div className={style.wrapper}>
         <div className={style.video}>
           <iframe

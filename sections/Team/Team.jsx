@@ -1,9 +1,10 @@
 import style from "./Team.module.css";
 import Image from "next/image";
+import { menuLinks } from "../../app.config";
 
 export const Team = () => {
   return (
-    <section className={style.container}>
+    <section className={style.container} id={menuLinks.TEAM}>
       <div className={style.wrapper}>
         <div className={style.title}>The Team</div>
         <div className={style.content}>
