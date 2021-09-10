@@ -9,10 +9,11 @@ export const Team = () => {
         <div className={style.content}>
           <div className={style.photo}>
             <Image
-              src="/assets/team.jpg"
+              src="/assets/team.webp"
               alt="Konstantin Ivanov & Nikita Kabardin"
               width={470}
               height={318}
+              unoptimized
             />
             <div className={style.team_names}>
               <div className={style.name}>Konstantin Ivanov</div>

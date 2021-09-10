@@ -11,14 +11,17 @@ export const Poster = () => {
     },
     {
       src: "/photos/handmade_1.jpg",
+      src_pre: "/photos/handmade_1_240.jpg",
       caption: "Handmade transistor by PapaSrapa"
     },
     {
       src: "/photos/handmade_2.jpg",
+      src_pre: "/photos/handmade_2_240.jpg",
       caption: "Handmade transistor by PapaSrapa"
     },
     {
       src: "/photos/papa_young.jpg",
+      src_pre: "/photos/papa_young_400.jpg",
       caption: "Eduard Srapionov aka PapaSrapa"
     }
   ];
@@ -79,22 +82,24 @@ export const Poster = () => {
         <div className={style.foto_handmaid}>
           <div className={style.handmaid_top}>
             <Image
-              src={images[1].src}
+              src={images[1].src_pre}
               width={240}
               height={240}
               objectFit="cover"
               alt={images[1].caption}
               onClick={() => openLightbox(1)}
+              unoptimized
             />
           </div>
           <div className={style.handmaid_bottom}>
             <Image
-              src={images[2].src}
+              src={images[2].src_pre}
               width={240}
               height={240}
               objectFit="cover"
               alt={images[2].caption}
               onClick={() => openLightbox(2)}
+              unoptimized
             />
           </div>
         </div>
@@ -117,12 +122,13 @@ export const Poster = () => {
         </div>
         <div className={style.foto_papa}>
           <Image
-            src={images[3].src}
+            src={images[3].src_pre}
             width={400}
             height={500}
             objectFit="cover"
             alt={images[3].caption}
             onClick={() => openLightbox(3)}
+            unoptimized
           />
         </div>
       </div>
