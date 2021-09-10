@@ -31,7 +31,10 @@ export const Head = () => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="/assets/back_02.jpg" />
+      <meta
+        property="og:image"
+        content="https://papasrapa.com/assets/back_02.jpg"
+      />
       <link rel="canonical" href={link} />
       <meta property="fb:app_id" content={fb_app_id} />
       <meta name="format-detection" content="telephone=no" />
