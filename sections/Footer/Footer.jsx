@@ -9,6 +9,7 @@ export const Footer = () => {
         alt="logo"
         width={290}
         height={100}
+        unoptimized
       />
     </footer>
   );
