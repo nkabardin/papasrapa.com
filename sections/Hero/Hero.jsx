@@ -1,6 +1,18 @@
+import { useEffect, useState } from "react";
 import style from "./Hero.module.css";
 
 export const Hero = ({ lang = "en" }) => {
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  useEffect(() => {
+    if (
+      "ontouchstart" in document.documentElement ||
+      navigator.maxTouchPoints
+    ) {
+      setIsTouchDevice(true);
+    }
+  }, [isTouchDevice]);
+
   return (
     <section className={style.container}>
       <div className={style.video_wrapper}>
@@ -11,14 +23,18 @@ export const Hero = ({ lang = "en" }) => {
           id="video"
           title="PapaSrapa documentary movie teaser"
         />
-        <div className={style.muteButton} id="unmute">
-          <div>{lang === "en" ? "Unmute" : "Включить звук"}</div>
-        </div>
+        {!isTouchDevice && (
+          <div className={style.muteButton} id="unmute">
+            <div>{lang === "en" ? "Unmute" : "Включить звук"}</div>
+          </div>
+        )}
         {/*eslint-disable */}
         <script src="https://player.vimeo.com/api/player.js" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+
+        {!isTouchDevice && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
                         const btn = document.getElementById('unmute');
                         btn.addEventListener("click", () => {
                             var player = new Vimeo.Player("video");
@@ -26,8 +42,9 @@ export const Hero = ({ lang = "en" }) => {
                             btn.style.display='none';
                             }
                             );`
-          }}
-        />
+            }}
+          />
+        )}
       </div>
     </section>
   );

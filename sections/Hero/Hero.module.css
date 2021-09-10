@@ -21,7 +21,7 @@
 
 .muteButton {
   position: absolute;
-  bottom: 50%;
+  bottom: 10%;
   left: 0;
   right: 0;
   font-size: 35px;
@@ -38,10 +38,4 @@
   padding: 12px;
   font-size: 18px;
   background: black;
-}
-
-@media (max-width: 768px) {
-  .video_wrapper {
-    margin-top: 3.25rem;
-  }
 }
