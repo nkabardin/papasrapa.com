@@ -19,11 +19,17 @@
 }
 
 .main {
-  /* padding-top: 5rem; */
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+}
+.poster_ru {
+  background: #000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

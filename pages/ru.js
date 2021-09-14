@@ -13,8 +13,9 @@ import { Shaman } from "../sections/ru/Shaman";
 import { Movie } from "../sections/ru/Movie";
 import { Team } from "../sections/ru/Team";
 import { Credits } from "../sections/Credits";
-import { Poster } from "../sections/Poster";
+// import { Poster } from "../sections/Poster";
 import { Gallery } from "../sections/Gallery";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -38,7 +39,16 @@ export default function Home() {
         <Team />
         <Gallery />
         <Credits />
-        <Poster lang="ru" />
+        {/* <Poster lang="ru" /> */}
+        <div className={styles.poster_ru}>
+          <Image
+            src="/assets/new_poster.png"
+            width={450}
+            height={634}
+            alt="PapaSrapa movie poster"
+            unoptimized
+          />
+        </div>
       </main>
       <Footer />
     </div>

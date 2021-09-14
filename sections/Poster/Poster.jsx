@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useCallback, useState } from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import style from "./Poster.module.css";
+import { menuLinks } from "../../app.config";
 
 export const Poster = () => {
   const images = [
@@ -52,7 +53,7 @@ export const Poster = () => {
               unoptimized
             />
           </div>
-          <div className={style.text} id="story">
+          <div className={style.text} id={menuLinks.STORY}>
             <div className={style.title}>A Story</div>
             <p>
               <strong>PAPA SRAPA</strong> is not a typical music documentary,
