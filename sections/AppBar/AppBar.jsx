@@ -1,5 +1,5 @@
 import style from "./AppBar.module.css";
-import Image from "next/image";
+// import Image from "next/image";
 import { menuLinks } from "../../app.config";
 
 // const desc = {
@@ -25,7 +25,7 @@ export const AppBar = ({ lang = "en" }) => {
     <header className={style.container}>
       <div className={style.wrapper}>
         <div className={style.logo}>
-          <Image
+          <img
             src="/assets/logo.svg"
             alt="PapaSrapa"
             width="200px"
@@ -63,7 +63,7 @@ export const AppBar = ({ lang = "en" }) => {
             rel="noopener"
             title="Instagram"
           >
-            <Image
+            <img
               src="/assets/instagram-white.svg"
               alt="Instagram"
               width={32}
@@ -72,7 +72,7 @@ export const AppBar = ({ lang = "en" }) => {
             />
           </a>
           <a href="https://t.me/papasrapa" rel="noopener" title="Telegram">
-            <Image
+            <img
               src="/assets/telegram-white.svg"
               alt="Telegram"
               width={32}

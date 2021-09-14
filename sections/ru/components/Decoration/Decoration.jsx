@@ -39,24 +39,25 @@ export const Decoration = props => {
                 bottom: var(--bottom,${bottom || "unset"});
                 right: var(--right,${right || "unset"});
             }
-
+            
             @media (max-width: ${bp.lg}){ 
                     .abstraction {
-                        ${lg || ""};
+                        ${lg || ""}
                     }
             }; 
+           
             @media (max-width: ${bp.md}){ 
                 .abstraction {
-                    ${md || ""};
+                    ${md || ""}
                 }
             };
             @media (max-width: ${bp.sm}){ 
                 .abstraction {
-                    ${sm || ""};
+                    ${sm || ""}
                 }
             @media (max-width: ${bp.xs}){ 
                 .abstraction {
-                    ${xs || ""};
+                    ${xs || ""}
                 }
             };
             `}</style>

@@ -60,6 +60,13 @@
   margin: auto;
   padding: 2rem 1rem;
 }
+/* .foto_papa img {
+  filter: grayscale(1);
+}
+.foto_papa.inView img {
+  filter: grayscale(0);
+  transition: filter 1s 1.75s ease-in-out;
+} */
 .foto_papa:hover {
   cursor: pointer;
 }
