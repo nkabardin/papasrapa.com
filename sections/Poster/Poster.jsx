@@ -2,10 +2,7 @@ import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import style from "./Poster.module.css";
-import { menuLinks } from "../../app.config";
-
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { Story } from "./Story";
 
 export const Poster = () => {
   const images = [
@@ -33,9 +30,6 @@ export const Poster = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-  const [ref, inView] = useInView();
-  const [isInView, setIsInView] = useState(false);
-
   const openLightbox = useCallback(index => {
     setCurrentImage(index);
     setViewerIsOpen(true);
@@ -44,12 +38,6 @@ export const Poster = () => {
   const closeLightbox = () => {
     setViewerIsOpen(false);
   };
-
-  useEffect(() => {
-    if (inView) {
-      setIsInView(true);
-    }
-  }, [inView]);
 
   return (
     <div className={style.container}>
@@ -65,76 +53,7 @@ export const Poster = () => {
               unoptimized
             />
           </div>
-
-          <div className={style.text} id={menuLinks.STORY} ref={ref}>
-            <div className={style.title}>A Story</div>
-            {isInView && (
-              <>
-                <motion.div
-                  initial="hidden"
-                  animate="visible"
-                  variants={{
-                    visible: {
-                      opacity: 1,
-                      x: 0,
-                      transition: { duration: 0.25, delay: 0.3 }
-                    },
-                    hidden: { opacity: 0, x: 1000 }
-                  }}
-                >
-                  <p>
-                    <strong>PAPA SRAPA</strong> is not a typical music
-                    documentary, but rather a condensed trip to the very heart
-                    of Noise. It is loaded with music that can hurt and heal,
-                    Russian weird avant-garde and savage vigor of its preeminent
-                    performer.
-                  </p>
-                </motion.div>
-                <motion.div
-                  initial="hidden"
-                  animate="visible"
-                  variants={{
-                    visible: {
-                      opacity: 1,
-                      x: 0,
-                      transition: { duration: 0.5, delay: 0.65 }
-                    },
-                    hidden: { opacity: 0, x: 1000 }
-                  }}
-                >
-                  <p>
-                    The film takes us to bizarre noise festivals and
-                    performances with ravers, tripsters and freaks immersing
-                    into worlds of sonic violence and ecstatic states of mind.
-                    Together with Papa we trace Noise back to 1920-s, binding it
-                    to early Soviet avant-garde figures, such as Dziga Vertov,
-                    Arseniy Avraamov and Nikolai Kulbin.
-                  </p>
-                </motion.div>
-                <motion.div
-                  initial="hidden"
-                  animate="visible"
-                  variants={{
-                    visible: {
-                      opacity: 1,
-                      x: 0,
-                      transition: { duration: 0.35, delay: 0.55 }
-                    },
-                    hidden: { opacity: 0, x: 1000 }
-                  }}
-                >
-                  <p>
-                    The craftsmаn should make his own tools - so Papa makes his
-                    of old Soviet radio components and cheap junk. We show it is
-                    not just about the way he plays them, using blood and
-                    saliva, but about the way he brings them to life. His
-                    weapons, known to the best part of Russian electronic
-                    musicians.
-                  </p>
-                </motion.div>
-              </>
-            )}
-          </div>
+          <Story />
         </div>
       </div>
       <div className={style.wrapper_next}>

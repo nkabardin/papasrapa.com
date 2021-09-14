@@ -136,3 +136,19 @@
     align-self: center;
   }
 }
+
+.animation {
+  /* transform: translateX(100px); */
+  animation: fromLeft 1s ease-in-out;
+}
+
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
