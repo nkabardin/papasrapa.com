@@ -19,7 +19,7 @@ export default function Contact() {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": e.target.getAttribute("name"),
+        "form-name": e.target.getAttribute("PapaSrapa contact"),
         ...name
       })
     })
