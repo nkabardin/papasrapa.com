@@ -1,3 +1,6 @@
+@import "animista.css";
+@import "button.css";
+
 @font-face {
   font-family: "Akrobat";
   font-display: auto;
@@ -49,9 +52,9 @@ body {
 }
 
 body {
-  background-size: cover;
+  /* background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(/assets/back_02_small.jpg);
+  background-image: url(/assets/back_02_small.jpg); */
   scroll-behavior: smooth;
 }
 
@@ -79,4 +82,17 @@ a {
 .external-link {
   color: #ffaf36;
   text-decoration: none;
+}
+
+.error {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff013c;
+  font-size: 1.5rem;
+  flex-direction: column;
+  text-shadow: #00e6f6 3px 3px;
+  padding: 0 1rem;
+  text-align: center;
 }

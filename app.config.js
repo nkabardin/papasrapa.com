@@ -9,5 +9,6 @@ export const menuLinks = {
   STORY: "story",
   TEAM: "team",
   GALLERY: "gallery",
-  TRAILER: "trailer"
+  TRAILER: "trailer",
+  CONTACT: "contact"
 };

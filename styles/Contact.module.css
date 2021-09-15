@@ -1,0 +1,128 @@
+.container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: #000;
+}
+.header {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+}
+.title {
+  flex: auto;
+  text-align: center;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-left: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.back a {
+  text-decoration: none;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 560px;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.contacts_item {
+  display: flex;
+  font-size: 1.25rem;
+}
+.contacts_item div {
+  flex-basis: 50%;
+}
+.email {
+  margin-left: 0.5rem;
+  color: var(--white);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  color: var(--white);
+  max-width: 640px;
+  margin: auto;
+}
+.form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.form_field {
+  display: flex;
+  flex-direction: column;
+}
+.form_field label {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.25rem;
+}
+.form_field input,
+.form_field textarea {
+  width: 100%;
+  max-width: 100%;
+  margin: 8px 0 16px;
+  padding: 16px;
+  border-radius: 12px;
+  border-width: 6px;
+  border-style: solid;
+  border-image: initial;
+  border-color: #aaa;
+  background-color: var(--white);
+  outline: none;
+}
+.form_field textarea {
+  min-height: 200px;
+}
+.form_field input:focus,
+.form_field textarea:focus {
+  border-color: #777;
+}
+
+.submit_button {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.thanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .title {
+    text-align: right;
+    margin-right: 1rem;
+  }
+  .contacts_item {
+    flex-direction: column;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .contacts_item div {
+    flex-basis: auto;
+  }
+  .email {
+    align-self: flex-end;
+    font-size: 1.25rem;
+  }
+}

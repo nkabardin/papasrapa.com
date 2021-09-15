@@ -15,7 +15,7 @@ export const Story = () => {
             savage vigor of its preeminent performer.
           </p>
         </Fade>
-        <Fade right>
+        <Fade left delay={250}>
           <p>
             The film takes us to bizarre noise festivals and performances with
             ravers, tripsters and freaks immersing into worlds of sonic violence
