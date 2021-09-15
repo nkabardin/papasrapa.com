@@ -77,7 +77,7 @@ export default function Contact() {
         <div className={styles.form}>
           <Reveal effect="fade-in-bottom" duration={600} delay={1600}>
             <form
-              name="PapaSrapa contact"
+              name="PapaSrapa"
               method="POST"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
