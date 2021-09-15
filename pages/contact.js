@@ -7,24 +7,13 @@ export default function Contact() {
   const [isSubmited, setIsSubmited] = useState(false);
   const [isError, setIsError] = useState(false);
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  }
-
   const handleSubmit = e => {
     e.preventDefault();
-    console.log("e", e);
     let myForm = document.getElementById("PapaSrapa");
     let formData = new FormData(myForm);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      //   body: encode({
-      //     "form-name": "PapaSrapa",
-      //     ...name
-      //   })
       body: new URLSearchParams(formData).toString()
     })
       .then(() => setIsSubmited(true))
