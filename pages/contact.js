@@ -15,13 +15,17 @@ export default function Contact() {
 
   const handleSubmit = e => {
     e.preventDefault();
+    console.log("e", e);
+    let myForm = document.getElementById("PapaSrapa");
+    let formData = new FormData(myForm);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": e.target.getAttribute("PapaSrapa"),
-        ...name
-      })
+      //   body: encode({
+      //     "form-name": "PapaSrapa",
+      //     ...name
+      //   })
+      body: new URLSearchParams(formData).toString()
     })
       .then(() => setIsSubmited(true))
       .catch(error => setIsError(error));
@@ -77,6 +81,7 @@ export default function Contact() {
         <div className={styles.form}>
           <Reveal effect="fade-in-bottom" duration={600} delay={1600}>
             <form
+              id="PapaSrapa"
               name="PapaSrapa"
               method="POST"
               data-netlify="true"
@@ -99,8 +104,8 @@ export default function Contact() {
                 </Reveal>
                 <Reveal effect="fade-in-bottom" duration={600} delay={2000}>
                   <div className={styles.form_field}>
-                    <label htmlFor="text">Subject *</label>
-                    <input id="text" type="text" name="subject" required />
+                    <label htmlFor="subject">Subject *</label>
+                    <input id="subject" type="text" name="subject" required />
                   </div>
                 </Reveal>
                 <Reveal effect="fade-in-bottom" duration={600} delay={2200}>
