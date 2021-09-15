@@ -19,7 +19,7 @@ export default function Contact() {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": e.target.getAttribute("PapaSrapa contact"),
+        "form-name": e.target.getAttribute("PapaSrapa"),
         ...name
       })
     })
@@ -83,7 +83,7 @@ export default function Contact() {
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
             >
-              <input type="hidden" name="form-name" value="PapaSrapa contact" />
+              <input type="hidden" name="form-name" value="PapaSrapa" />
               <fieldset>
                 <Reveal effect="fade-in-bottom" duration={600} delay={1600}>
                   <div className={styles.form_field}>
