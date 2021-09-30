@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import style from "./Poster.module.css";
 import { Story } from "./Story";
+import Fade from "react-reveal/Fade";
 
 export const Poster = () => {
   const images = [
@@ -83,20 +84,26 @@ export const Poster = () => {
         </div>
         <div className={style.next_text}>
           <strong>
-            <i>dive into the underground . . . </i>
+            <Fade delay={450} duration={3000}>
+              <i>dive into the underground . . . </i>
+            </Fade>
           </strong>
-          <p>
-            Our camera followed Papa Srapa at every step and turn. We sneaked
-            into numerous dim rooms and spacious halls he was performing at,
-            chased him to the eerie underworld of an abandoned factory. We
-            listened to his liquored up revelations on the Soviet underground -
-            and tasted of his doomsday DIY synth shrieking.
-          </p>
-          <p>
-            This film shows that Noise music was not born in Europe or Japan,
-            but came to be as a bright child of a century-old tradition of
-            Russian avant-garde.
-          </p>
+          <Fade left>
+            <p>
+              Our camera followed Papa Srapa at every step and turn. We sneaked
+              into numerous dim rooms and spacious halls he was performing at,
+              chased him to the eerie underworld of an abandoned factory. We
+              listened to his liquored up revelations on the Soviet underground
+              - and tasted of his doomsday DIY synth shrieking.
+            </p>
+          </Fade>
+          <Fade right delay={150}>
+            <p>
+              This film shows that Noise music was not born in Europe or Japan,
+              but came to be as a bright child of a century-old tradition of
+              Russian avant-garde.
+            </p>
+          </Fade>
         </div>
         {/* <div className={style.foto_papa + " " + (inView ? style.inView : "")}> */}
         <div className={style.foto_papa}>
