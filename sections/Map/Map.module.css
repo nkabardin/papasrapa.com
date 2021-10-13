@@ -1,0 +1,14 @@
+.container {
+  --widthA: 100vw;
+  position: relative;
+  background-image: url("/assets/world-map-big.png");
+  width: var(--widthA);
+  height: calc((var(--widthA) - 4rem) * 0.64);
+  max-width: 600px;
+  max-height: calc((600px - 4rem) * 0.64);
+  /* background-size: cover;
+  background-position: top center; */
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+}

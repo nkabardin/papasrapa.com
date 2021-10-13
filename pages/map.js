@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { MapSvg } from "../sections/Map/MapSvg.jsx";
+// import { MapSvg } from "../sections/Map/MapSvg.jsx";
+import { Map as MapDiv } from "../sections/Map/Map.jsx";
 
 export default function Map() {
   return (
@@ -11,7 +12,7 @@ export default function Map() {
         height={"100%"}
         unoptimized
       /> */}
-      <MapSvg />
+      <MapDiv />
       <style jsx>{`
         .wrapper {
           display: flex;
@@ -20,6 +21,7 @@ export default function Map() {
           justify-content: center;
           height: 100vh;
           width: 100%;
+          color: white;
         }
         .wrapper > div {
           width: 100%;
