@@ -42,9 +42,8 @@ export const Team = () => {
             </Fade>
             <Fade right delay={200}>
               <p>
-                <strong>Nikita</strong> is based in Stockholm where he works on
-                projects like Spotify and Battlefield and started a production
-                company.
+                <strong>Nikita</strong> is based in Paris and works as a
+                software engineer (with projects like Spotify and Battlefield).
               </p>
             </Fade>
           </div>
