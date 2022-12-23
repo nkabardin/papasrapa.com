@@ -88,8 +88,9 @@ export const Credits = () => {
       </div>
 
       <div className={style.group}>
-        <div className={style.sub_title}>Voice Editor</div>
+        <div className={style.sub_title}>Voice Editors</div>
         <p>Ivan Yerofeyev</p>
+        <p>Constantine Dorogobed</p>
       </div>
 
       <div className={style.group}>
