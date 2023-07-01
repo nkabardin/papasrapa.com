@@ -94,6 +94,28 @@ export const AppBar = ({ lang = "en" }) => {
             {lang === "en" ? "ru" : "en"}
           </a>
         </div>
+        <div>
+
+          <h3>Papa Srapa — 2021 — 75 min — World premiere&nbsp;
+            <a style={{textDecoration: "underline" }}
+               href="https://artdocfest.com/en/movie/papa_srapa_2020_74/">ArtDokFest</a>,
+            European premiere&nbsp;
+            <a style={{textDecoration: "underline" }}
+              href="https://2021.luff.ch/public/en/film/papa-srapa">LUFF</a>,&nbsp;
+            screened in Netherlands, Austria, Switzerland, China,
+            Russia, Poland, Turkey, Georgia, Montenegro.
+            <br/>
+            <br/> Now streaming at&nbsp;
+            <a style={{textDecoration: "underline"}}
+              href="https://www.kinopoisk.ru/film/4446102/?utm_referrer=www.google.com">Kinopoisk</a> 8.1,&nbsp;
+            <a href="https://www.imdb.com/title/tt15724292/">IMDb 8.7</a>
+            ,&nbsp;
+            youtube premiere coming soon to&nbsp;
+            <a style={{textDecoration: "underline"}}
+               href="https://www.youtube.com/@schizoproletariat">Schizoproletariat</a> channel
+          </h3>
+
+        </div>
       </div>
     </header>
   );
