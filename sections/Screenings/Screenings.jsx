@@ -186,7 +186,7 @@ link: "https://prestoportal.pl/festiwal-sputnik-film-dokumentalny-papa-srapa",
   }
 ];
 
-
+SCREENINGS.reverse();
 
 export const Screenings = () => {
   return (
