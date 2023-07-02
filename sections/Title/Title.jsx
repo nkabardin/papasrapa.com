@@ -33,7 +33,7 @@ export const Title = ({lang = "en"}) => {
             <a style={{textDecoration: "underline"}}
                href="https://2021.luff.ch/public/en/film/papa-srapa">LUFF</a>,&nbsp;
             screened in Netherlands, Austria, Switzerland, China,
-            Russia, Poland, Turkey, Georgia, Montenegro.
+            Russia, Poland, Georgia, Montenegro.
           </h3>
           <h4 style={{color: "white"}}>
             <a style={{textDecoration: "underline"}}

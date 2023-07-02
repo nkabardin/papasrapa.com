@@ -5,7 +5,7 @@ export const Story = () => {
   return (
     <>
       <div className={style.text} id={menuLinks.STORY}>
-        <div className={style.title}>A Story</div>
+        <div className={style.title}>The Movie</div>
 
         <Fade right>
           <p>

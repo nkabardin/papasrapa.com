@@ -1,43 +1,15 @@
 @import "animista.css";
 @import "button.css";
 
-@font-face {
-  font-family: "Akrobat";
-  font-display: auto;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/akrobat/Akrobat-Regular.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Akrobat";
-  font-display: auto;
-  font-style: normal;
-  font-weight: 500;
-  src: url("/fonts/akrobat/Akrobat-SemiBold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Akrobat";
-  font-display: auto;
-  font-style: normal;
-  font-weight: bold;
-  src: url("/fonts/akrobat/Akrobat-Bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Akrobat";
-  font-display: auto;
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/akrobat/Akrobat-ExtraBold.woff2") format("woff2");
-}
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Chakra+Petch:ital,wght@0,300;1,300&display=swap");
 
 :root {
   --black: #000;
   --white: #fff;
   --footer_bg: #231f20;
   --max-width: 1200px;
-  --font-pt-serif: "PT Sans", sans-serif;
-  --font-akrobat: "Akrobat";
+  --font-pt-serif: "Chakra Petch", sans-serif;
+  --font-akrobat: "Chakra Petch";
   --shadows-md: 0 4px 6px -1px rgba(255, 255, 255, 0.1),
     0 2px 4px -1px rgba(255, 255, 255, 0.06);
 }
