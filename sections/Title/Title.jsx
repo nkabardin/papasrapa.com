@@ -1,15 +1,16 @@
 import {useEffect, useState} from "react";
 import Image from "next/image";
 import {STORY_IMAGES} from "../Poster";
+import style from "./Title.module.css";
 
 export const Title = ({lang = "en"}) => {
 
   return (
-    <section style={{ margin: "25px 0"}}>
+    <section className={style.container}>
       <div style={{
         display: "flex", justifyContent: "center", backgroundColor: "#000000",
         alignItems: "center", padding: "10px", flexDirection: "row", flexWrap: "wrap",
-        gap: "30px"
+        gap: "20px"
       }}>
 
         <div>
