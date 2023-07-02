@@ -44,14 +44,17 @@ export default function Home() {
       <main className={styles.main}>
         <Hero />
         <Screenings />
+        <div>
+          {organize}
+        </div>
         <Poster />
         {/*<Teaser />*/}
         {/*<Dive />*/}
         <Team />
+        <Gallery />
         <div>
           {organize}
         </div>
-        <Gallery />
         <Credits />
       </main>
 
