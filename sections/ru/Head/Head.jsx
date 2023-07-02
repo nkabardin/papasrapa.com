@@ -16,7 +16,7 @@ export const Head = () => {
             <link crossOrigin="anonymous" rel="preconnect" href="https://fonts.gstatic.com" />
             <link crossOrigin="anonymous" rel="preconnect" href="https://player.vimeo.com" />
 
-            <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Chakra+Petch:ital,wght@0,300;1,300&display=swap" rel="stylesheet" media="screen" />
+            <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,300&display=swap" rel="stylesheet" media="screen" />
 
             <meta property="og:url" content={data.link} />
             <meta property="og:title" content={data[lang].title} />

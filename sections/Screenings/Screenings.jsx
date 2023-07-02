@@ -195,7 +195,7 @@ export const Screenings = () => {
       <ul style={{padding: 0}}>
         {SCREENINGS.map((screening) => (
           <li key={`${screening.date}_${screening.venue}`} className={style.item}>
-            {screening.date},&nbsp;
+            {screening.date}&nbsp;/&nbsp;
             {screening.city}, &nbsp;
             {screening.link ? (
               <a href={screening.link} target="_blank" rel="noreferrer">
