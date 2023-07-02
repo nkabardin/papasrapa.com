@@ -11,12 +11,14 @@ import { Teaser } from "../sections/Teaser";
 import { Team } from "../sections/Team";
 import { Dive } from "../sections/Dive";
 import { Screenings } from "../sections/Screenings";
+import {Title} from "../sections/Title/Title";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head />
       <AppBar />
+      <Title />
       <div
         className="background"
         style={{ "--background-img": "url(/assets/back_02.webp)" }}
@@ -24,9 +26,9 @@ export default function Home() {
       <main className={styles.main}>
         <Hero />
         <Poster />
-        <Screenings />
-        <Teaser />
-        <Dive />
+        {/*<Screenings />*/}
+        {/*<Teaser />*/}
+        {/*<Dive />*/}
         <Team />
         <Gallery />
         <Credits />

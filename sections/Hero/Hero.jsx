@@ -39,6 +39,7 @@ export const Hero = ({lang = "en"}) => {
                         btn.addEventListener("click", () => {
                             var player = new Vimeo.Player("video");
                             player.setMuted(false);
+                            player.setCurrentTime(0);
                             btn.style.display='none';
                             }
                             );`
