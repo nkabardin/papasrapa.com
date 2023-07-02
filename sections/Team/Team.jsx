@@ -45,6 +45,16 @@ export const Team = () => {
                 <strong>Nikita</strong> is based in Paris and works in media and tech (clients including Warner Brothers/Discovery, Spotify and Battlefield).
               </p>
             </Fade>
+            <Fade left delay={400}>
+              <p style={{ padding: "32px 0px"}}>
+                <a href={`#${menuLinks.CREDITS}`}
+                  style={{ color: "white",
+                  border: "1px solid white", padding: "14px",
+                  }}
+
+                >See full credits</a>
+              </p>
+            </Fade>
           </div>
         </div>
       </div>

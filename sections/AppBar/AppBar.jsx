@@ -66,6 +66,11 @@ export const AppBar = ({lang = "en"}) => {
                 {lang === "en" ? "Contact" : "Контакты"}
               </a>
             </li>
+            <li>
+              <a href={`#${menuLinks.CREDITS}`}>
+                {lang === "en" ? "Credits" : "Финальные титры"}
+              </a>
+            </li>
           </ul>
         </div>
         <div className={style.social}>

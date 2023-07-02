@@ -1,8 +1,9 @@
 import style from "./Credits.module.css";
+import {menuLinks} from "../../app.config";
 
 export const Credits = () => {
   return (
-    <div className={style.container}>
+    <div className={style.container} id={menuLinks.CREDITS}>
       <div className={style.title}>Film Credits</div>
       <div className={style.group}>
         <div>

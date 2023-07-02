@@ -11,5 +11,6 @@ export const menuLinks = {
   GALLERY: "gallery",
   SCREENINGS: "screenings",
   TRAILER: "trailer",
-  CONTACT: "contact"
+  CONTACT: "contact",
+  CREDITS: "credits"
 };
