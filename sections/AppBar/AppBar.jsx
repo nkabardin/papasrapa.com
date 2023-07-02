@@ -40,11 +40,11 @@ export const AppBar = ({ lang = "en" }) => {
                 {lang === "en" ? "Story" : "История"}
               </a>
             </li>
-            <li>
-              <a href={`#${menuLinks.TRAILER}`}>
-                {lang === "en" ? "Trailer" : "Трейлер"}
-              </a>
-            </li>
+            {/*<li>*/}
+            {/*  <a href={`#${menuLinks.TRAILER}`}>*/}
+            {/*    {lang === "en" ? "Trailer" : "Трейлер"}*/}
+            {/*  </a>*/}
+            {/*</li>*/}
             <li>
               <a href={`#${menuLinks.TEAM}`}>
                 {lang === "en" ? "Team" : "Команда"}

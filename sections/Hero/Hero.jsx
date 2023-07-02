@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 import style from "./Hero.module.css";
 
-export const Hero = ({ lang = "en" }) => {
+export const Hero = ({lang = "en"}) => {
   const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export const Hero = ({ lang = "en" }) => {
     <section className={style.container}>
       <div className={style.video_wrapper}>
         <iframe
-          src="https://player.vimeo.com/video/535592308?autoplay=1&muted=1&loop=1&byline=0&portrait=0"
+          src="https://player.vimeo.com/video/535605732?autoplay=1&muted=1&loop=1&byline=0&portrait=0"
           frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           id="video"
@@ -29,7 +29,7 @@ export const Hero = ({ lang = "en" }) => {
           </div>
         )}
         {/*eslint-disable */}
-        <script src="https://player.vimeo.com/api/player.js" />
+        <script src="https://player.vimeo.com/api/player.js"/>
 
         {!isTouchDevice && (
           <script
@@ -39,6 +39,7 @@ export const Hero = ({ lang = "en" }) => {
                         btn.addEventListener("click", () => {
                             var player = new Vimeo.Player("video");
                             player.setMuted(false);
+                            player.setCurrentTime(0);
                             btn.style.display='none';
                             }
                             );`
