@@ -24,9 +24,21 @@
 }
 .content {
   display: flex;
-  width: 100%;
+
   justify-content: center;
   min-height: 495px;
+}
+
+@media (min-width: 769px) {
+  .content {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
 }
 
 .poster {
