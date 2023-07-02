@@ -13,10 +13,10 @@ export const Team = () => {
         <div className={style.content}>
           <div className={style.photo}>
             <Image
-              src="/assets/team.webp"
+              src="/assets/team.jpg"
               alt="Konstantin Ivanov & Nikita Kabardin"
-              width={470}
-              height={318}
+              width={1024*0.40}
+              height={616*0.40}
               unoptimized
             />
             <div className={style.team_names}>
@@ -42,8 +42,7 @@ export const Team = () => {
             </Fade>
             <Fade right delay={200}>
               <p>
-                <strong>Nikita</strong> is based in Paris and works as a
-                software engineer (with projects like Spotify and Battlefield).
+                <strong>Nikita</strong> is based in Paris and works in media and tech (clients including Warner Brothers/Discovery, Spotify and Battlefield).
               </p>
             </Fade>
           </div>

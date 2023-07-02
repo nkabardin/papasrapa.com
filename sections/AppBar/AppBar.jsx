@@ -85,14 +85,14 @@ export const AppBar = ({ lang = "en" }) => {
               // unoptimized
             />
           </a>
-          <a
-            href={lang_link}
-            rel="noopener"
-            title={lang === "en" ? "Russian" : "English"}
-            className={style.lang_link}
-          >
-            {lang === "en" ? "ru" : "en"}
-          </a>
+          {/*<a*/}
+          {/*  href={lang_link}*/}
+          {/*  rel="noopener"*/}
+          {/*  title={lang === "en" ? "Russian" : "English"}*/}
+          {/*  className={style.lang_link}*/}
+          {/*>*/}
+          {/*  {lang === "en" ? "ru" : "en"}*/}
+          {/*</a>*/}
         </div>
       </div>
     </header>

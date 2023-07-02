@@ -42,6 +42,7 @@
 }
 .team_names {
   display: flex;
+  width: 400px;
   justify-content: space-around;
   align-items: center;
   font-size: 1.25rem;
