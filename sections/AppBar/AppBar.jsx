@@ -1,6 +1,6 @@
 import style from "./AppBar.module.css";
 // import Image from "next/image";
-import {menuLinks} from "../../app.config";
+import { menuLinks } from "../../constants/menuLinks";
 
 // const desc = {
 //   ru: (
@@ -19,7 +19,7 @@ import {menuLinks} from "../../app.config";
 //   )
 // };
 
-export const AppBar = ({lang = "en"}) => {
+export const AppBar = ({ lang = "en" }) => {
   const lang_link = lang === "en" ? "/ru" : "/";
   return (
     <header className={style.container}>
@@ -107,6 +107,5 @@ export const AppBar = ({lang = "en"}) => {
         </div>
       </div>
     </header>
-  )
-    ;
+  );
 };

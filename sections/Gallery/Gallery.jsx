@@ -3,13 +3,13 @@ import { useCallback, useEffect, useState } from "react";
 import style from "./Gallery.module.css";
 import { images } from "./data";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { menuLinks } from "../../app.config";
+import { menuLinks } from "../../constants/menuLinks";
 
 export const Gallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-  const openLightbox = useCallback(index => {
+  const openLightbox = useCallback((index) => {
     setCurrentImage(index);
     setViewerIsOpen(true);
   }, []);
@@ -169,9 +169,9 @@ export const Gallery = () => {
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={images.map(item => ({
+              views={images.map((item) => ({
                 ...item,
-                source: item.src
+                source: item.src,
               }))}
             />
           </Modal>

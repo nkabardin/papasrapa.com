@@ -1,6 +1,6 @@
 import style from "./Poster.module.css";
-import { menuLinks } from "../../app.config";
 import Fade from "react-reveal/Fade";
+import { menuLinks } from "../../constants/menuLinks";
 export const Story = () => {
   return (
     <>

@@ -1,7 +1,7 @@
 import style from "./Team.module.css";
 import Image from "next/image";
-import { menuLinks } from "../../app.config";
 import Fade from "react-reveal/Fade";
+import { menuLinks } from "../../constants/menuLinks";
 
 export const Team = () => {
   return (
@@ -15,8 +15,8 @@ export const Team = () => {
             <Image
               src="/assets/team.jpg"
               alt="Konstantin Ivanov & Nikita Kabardin"
-              width={1024*0.40}
-              height={616*0.40}
+              width={1024 * 0.4}
+              height={616 * 0.4}
               unoptimized
             />
             <div className={style.team_names}>
@@ -42,17 +42,23 @@ export const Team = () => {
             </Fade>
             <Fade right delay={200}>
               <p>
-                <strong>Nikita</strong> is based in Paris and works in media and tech (clients including Warner Brothers/Discovery, Spotify and Battlefield).
+                <strong>Nikita</strong> is based in Paris and works in media and
+                tech (clients including Warner Brothers/Discovery, Spotify and
+                Battlefield).
               </p>
             </Fade>
             <Fade left delay={400}>
-              <p style={{ padding: "32px 0px"}}>
-                <a href={`#${menuLinks.CREDITS}`}
-                  style={{ color: "white",
-                  border: "1px solid white", padding: "14px",
+              <p style={{ padding: "32px 0px" }}>
+                <a
+                  href={`#${menuLinks.CREDITS}`}
+                  style={{
+                    color: "white",
+                    border: "1px solid white",
+                    padding: "14px",
                   }}
-
-                >See full credits</a>
+                >
+                  See full credits
+                </a>
               </p>
             </Fade>
           </div>

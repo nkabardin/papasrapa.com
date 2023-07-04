@@ -1,5 +1,5 @@
 import style from "./Credits.module.css";
-import {menuLinks} from "../../app.config";
+import { menuLinks } from "../../constants/menuLinks";
 
 export const Credits = () => {
   return (
