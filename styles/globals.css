@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "animista.css";
 @import "button.css";
 
@@ -38,16 +42,11 @@ a {
 * {
   box-sizing: border-box;
 }
-.background {
-  background-image: var(--background-img, url(/assets/back_02_small.jpg));
+.background-wrap {
   position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100vw;
   height: 100vh;
-  background-size: cover;
-  background-position: top center;
+  width: 100vw;
+  overflow: hidden;
   z-index: -1;
 }
 
