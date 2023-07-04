@@ -68,3 +68,17 @@ a {
   padding: 0 1rem;
   text-align: center;
 }
+
+.organize-button {
+  color: white;
+  border: 1px solid white;
+  padding: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;
+  margin: 100px auto;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: rgba(20, 110, 20, 0.7);
+  box-shadow: 0 0 10px 5px rgba(20, 110, 20, 0.8);
+}
