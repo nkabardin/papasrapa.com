@@ -1,8 +1,7 @@
 import style from "./AppBar.module.css";
 import { menuLinks } from "../../constants/menuLinks";
 
-export const AppBar = ({ lang = "en" }) => {
-  const lang_link = lang === "en" ? "/ru" : "/";
+export const AppBar = () => {
   return (
     <header className={style.container}>
       <div className={style.wrapper}>
@@ -17,34 +16,22 @@ export const AppBar = ({ lang = "en" }) => {
         <div className={style.links}>
           <ul>
             <li>
-              <a href={`#${menuLinks.SCREENINGS}`}>
-                {lang === "en" ? "Screenings" : "Показы"}
-              </a>
+              <a href={`#${menuLinks.SCREENINGS}`}>Screenings</a>
             </li>
             <li>
-              <a href={`#${menuLinks.STORY}`}>
-                {lang === "en" ? "Story" : "История"}
-              </a>
+              <a href={`#${menuLinks.STORY}`}>Story</a>
             </li>
             <li>
-              <a href={`#${menuLinks.TEAM}`}>
-                {lang === "en" ? "Team" : "Команда"}
-              </a>
+              <a href={`#${menuLinks.TEAM}`}>Team</a>
             </li>
             <li>
-              <a href={`#${menuLinks.GALLERY}`}>
-                {lang === "en" ? "Gallery" : "Галерея"}
-              </a>
+              <a href={`#${menuLinks.GALLERY}`}>Gallery</a>
             </li>
             <li>
-              <a href={`/${menuLinks.CONTACT}`}>
-                {lang === "en" ? "Contact" : "Контакты"}
-              </a>
+              <a href={`/${menuLinks.CONTACT}`}>Contact</a>
             </li>
             <li>
-              <a href={`#${menuLinks.CREDITS}`}>
-                {lang === "en" ? "Credits" : "Финальные титры"}
-              </a>
+              <a href={`#${menuLinks.CREDITS}`}>Credits</a>
             </li>
           </ul>
         </div>
