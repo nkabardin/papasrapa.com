@@ -17,11 +17,12 @@ export const Title = () => {
           gap: "20px",
         }}
       >
-        <div style={{ width: 270, height: 380 }}>
+        <div>
           <Image
             src={posterImage}
             alt={"Papa Srapa (2021) movie poster"}
-            unoptimized
+            width={270}
+            // unoptimized
           />
         </div>
         <div style={{ maxWidth: "350px" }}>

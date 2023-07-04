@@ -11,8 +11,8 @@ export const AppBar = () => {
           <Image
             src="/assets/logo.svg"
             alt="PapaSrapa"
-            width="200px"
-            height="44px"
+            width={200}
+            height={44}
           />
         </div>
         <div className={style.links}>

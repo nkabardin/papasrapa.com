@@ -11,33 +11,51 @@ import { Team } from "../sections/Team";
 import { Screenings } from "../sections/Screenings";
 import { Title } from "../sections/Title/Title";
 import { OrganizeScreeningButton } from "../components/OrganizeScreeningButton";
+import Image from "next/image";
+import bgImage from "../public/assets/back_02.webp";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head />
-      <AppBar />
-      <Title />
-      <div
+    <div>
+      <div className="background-wrap">
+        <Image
+          alt="Papa Srapa"
+          src={bgImage}
+          placeholder="blur"
+          quality={100}
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+          }}
+        />
+      </div>
+
+      <div className={styles.container}>
+        <Head />
+        <AppBar />
+        <Title />
+        {/* <div
         className="background"
         style={{ "--background-img": "url(/assets/back_02.webp)" }}
-      />
-      <main className={styles.main}>
-        <Hero />
-        <Screenings />
-        <div>
-          <OrganizeScreeningButton />
-        </div>
-        <Poster />
-        <Team />
-        <Gallery />
-        <div>
-          <OrganizeScreeningButton />
-        </div>
-        <Credits />
-      </main>
+      /> */}
+        <main className={styles.main}>
+          <Hero />
+          <Screenings />
+          <div>
+            <OrganizeScreeningButton />
+          </div>
+          <Poster />
+          <Team />
+          <Gallery />
+          <div>
+            <OrganizeScreeningButton />
+          </div>
+          <Credits />
+        </main>
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }
