@@ -35,10 +35,6 @@ export default function Home() {
         <Head />
         <AppBar />
         <Title />
-        {/* <div
-        className="background"
-        style={{ "--background-img": "url(/assets/back_02.webp)" }}
-      /> */}
         <main className={styles.main}>
           <Hero />
           <Screenings />
