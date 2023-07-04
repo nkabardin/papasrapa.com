@@ -37,7 +37,7 @@ export const AppBar = () => {
             </li>
           </ul>
         </div>
-        <div className={style.social}>
+        <div className="flex text-white space-x-4">
           <a
             href="https://www.instagram.com/papa_srapa/"
             rel="noopener"
