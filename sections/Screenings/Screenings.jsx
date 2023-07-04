@@ -1,16 +1,4 @@
 import style from "./Screenings.module.css";
-import Image from "next/image";
-
-const ExternalLink = ({ href, children }) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    style={{ textDecoration: "underline" }}
-  >
-    {children}
-  </a>
-);
 
 const SCREENINGS = [
   {
