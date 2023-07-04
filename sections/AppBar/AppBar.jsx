@@ -1,5 +1,6 @@
 import style from "./AppBar.module.css";
 import { menuLinks } from "../../constants/menuLinks";
+import Link from "next/link";
 
 export const AppBar = () => {
   return (
@@ -16,22 +17,22 @@ export const AppBar = () => {
         <div className={style.links}>
           <ul>
             <li>
-              <a href={`#${menuLinks.SCREENINGS}`}>Screenings</a>
+              <Link href={`#${menuLinks.SCREENINGS}`}>Screenings</Link>
             </li>
             <li>
-              <a href={`#${menuLinks.STORY}`}>Story</a>
+              <Link href={`#${menuLinks.STORY}`}>Story</Link>
             </li>
             <li>
-              <a href={`#${menuLinks.TEAM}`}>Team</a>
+              <Link href={`#${menuLinks.TEAM}`}>Team</Link>
             </li>
             <li>
-              <a href={`#${menuLinks.GALLERY}`}>Gallery</a>
+              <Link href={`#${menuLinks.GALLERY}`}>Gallery</Link>
             </li>
             <li>
-              <a href={`/${menuLinks.CONTACT}`}>Contact</a>
+              <Link href={`/${menuLinks.CONTACT}`}>Contact</Link>
             </li>
             <li>
-              <a href={`#${menuLinks.CREDITS}`}>Credits</a>
+              <Link href={`#${menuLinks.CREDITS}`}>Credits</Link>
             </li>
           </ul>
         </div>
