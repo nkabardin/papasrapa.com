@@ -20,14 +20,14 @@ export const Title = () => {
           <h3 className="m-[revert] text-[19px]">
             World premiere&nbsp;
             <a
-              style={{ textDecoration: "underline" }}
+              className="underline"
               href="https://artdocfest.com/en/movie/papa_srapa_2020_74/"
             >
               ArtDokFest
             </a>
             , European premiere&nbsp;
             <a
-              style={{ textDecoration: "underline" }}
+              className="underline"
               href="https://2021.luff.ch/public/en/film/papa-srapa"
             >
               LUFF
