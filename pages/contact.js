@@ -7,17 +7,17 @@ export default function Contact() {
   const [isSubmited, setIsSubmited] = useState(false);
   const [isError, setIsError] = useState(false);
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     let myForm = document.getElementById("PapaSrapa");
     let formData = new FormData(myForm);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString()
+      body: new URLSearchParams(formData).toString(),
     })
       .then(() => setIsSubmited(true))
-      .catch(error => setIsError(error));
+      .catch((error) => setIsError(error));
   };
 
   return (
@@ -26,7 +26,7 @@ export default function Contact() {
         <Reveal effect="fade-in-top" duration={600} delay={200}>
           <div className={styles.back}>
             <Reveal effect="fade-in-right" delay={750}>
-              <Link href="/">
+              <Link href="/" legacyBehavior>
                 <a>← back</a>
               </Link>
             </Reveal>

@@ -7,58 +7,51 @@ import { Gallery } from "../sections/Gallery";
 import { Credits } from "../sections/Credits";
 import { Poster } from "../sections/Poster";
 import { Footer } from "../sections/Footer";
-import { Teaser } from "../sections/Teaser";
 import { Team } from "../sections/Team";
-import { Dive } from "../sections/Dive";
 import { Screenings } from "../sections/Screenings";
-import {Title} from "../sections/Title/Title";
-import {menuLinks} from "../app.config";
+import { Title } from "../sections/Title/Title";
+import { OrganizeScreeningButton } from "../components/OrganizeScreeningButton";
+import Image from "next/image";
+import bgImage from "../public/assets/back_02.webp";
 
 export default function Home() {
-  const organize = (
-    <a href={`/${menuLinks.CONTACT}`} style={{ color: "white",
-      border: "1px solid white",
-      padding: "16px",
-      borderRadius: "5px",
-      textDecoration: "none",
-      display: "block",
-      margin: "100px auto",
-      fontWeight: "bold",
-      fontSize: "1.2rem",
-      backgroundColor: "rgba(20, 110, 20, 0.7)",
-      boxShadow: "0 0 10px 5px rgba(20, 110, 20, 0.80)"
-
-    }}>
-      Organize a screening in your city
-    </a>
-  )
   return (
-    <div className={styles.container}>
-      <Head />
-      <AppBar />
-      <Title />
-      <div
-        className="background"
-        style={{ "--background-img": "url(/assets/back_02.webp)" }}
-      />
-      <main className={styles.main}>
-        <Hero />
-        <Screenings />
-        <div>
-          {organize}
-        </div>
-        <Poster />
-        {/*<Teaser />*/}
-        {/*<Dive />*/}
-        <Team />
-        <Gallery />
-        <div>
-          {organize}
-        </div>
-        <Credits />
-      </main>
+    <div className="font-chakra h-screen overflow-x-hidden">
+      <div className="background-wrap">
+        <Image
+          alt="Papa Srapa"
+          src={bgImage}
+          placeholder="blur"
+          quality={75}
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+          }}
+        />
+      </div>
 
-      <Footer />
+      <div className={styles.container}>
+        <Head />
+        <AppBar />
+        <Title />
+        <main className={styles.main}>
+          <Hero />
+          <Screenings />
+          <div>
+            <OrganizeScreeningButton />
+          </div>
+          <Poster />
+          <Team />
+          <Gallery />
+          <div>
+            <OrganizeScreeningButton />
+          </div>
+          <Credits />
+        </main>
+
+        <Footer />
+      </div>
     </div>
   );
 }
