@@ -16,13 +16,13 @@ import bgImage from "../public/assets/back_02.webp";
 
 export default function Home() {
   return (
-    <div className="font-chakra">
+    <div className="font-chakra h-screen overflow-x-hidden">
       <div className="background-wrap">
         <Image
           alt="Papa Srapa"
           src={bgImage}
           placeholder="blur"
-          quality={100}
+          quality={75}
           fill
           sizes="100vw"
           style={{

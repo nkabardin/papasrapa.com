@@ -19,23 +19,10 @@
 
 html,
 body {
-  padding: 0;
+  /* padding: 0;
   margin: 0;
-  font-family: var(--font-pt-serif);
-  /* -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, 
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;*/
-}
-
-body {
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(/assets/back_02_small.jpg); */
+  font-family: var(--font-pt-serif); */
   scroll-behavior: smooth;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 * {
@@ -47,6 +34,7 @@ a {
   width: 100vw;
   overflow: hidden;
   z-index: -1;
+  top: 0;
 }
 
 .external-link {
