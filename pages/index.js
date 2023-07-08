@@ -16,7 +16,7 @@ import bgImage from "../public/assets/back_02.webp";
 
 export default function Home() {
   return (
-    <div>
+    <div className="font-chakra">
       <div className="background-wrap">
         <Image
           alt="Papa Srapa"

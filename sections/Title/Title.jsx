@@ -1,33 +1,23 @@
 import Image from "next/image";
 import posterImage from "../../public/assets/new_poster.png";
-import style from "./Title.module.css";
+import logoImage from "../../public/assets/footer_logo2.svg";
 
 export const Title = () => {
   return (
-    <section className={style.container}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          backgroundColor: "#000000",
-          alignItems: "center",
-          padding: "10px",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          gap: "20px",
-        }}
-      >
+    <section className="tablet:mt-6">
+      <div className="flex bg-black gap-5 p-2.5 flex-wrap items-center justify-center">
         <div>
           <Image
             src={posterImage}
-            alt={"Papa Srapa (2021) movie poster"}
+            alt="Papa Srapa (2021) movie poster"
             width={270}
-            // unoptimized
+            height={380}
+            placeholder="blur"
           />
         </div>
-        <div style={{ maxWidth: "350px" }}>
-          <h3 style={{ color: "white" }}>Papa Srapa — 2021 — 75 min</h3>
-          <h3 style={{ color: "white" }}>
+        <div className="max-w-[350px] font-bold text-white">
+          <h3 className="m-[revert] text-[19px]">Papa Srapa — 2021 — 75 min</h3>
+          <h3 className="m-[revert] text-[19px]">
             World premiere&nbsp;
             <a
               style={{ textDecoration: "underline" }}
@@ -45,23 +35,23 @@ export const Title = () => {
             ,&nbsp; screened in Netherlands, Austria, Switzerland, China,
             Russia, Poland, Georgia, Montenegro.
           </h3>
-          <h4 style={{ color: "white" }}>
+          <h4 className="m-[revert]">
             <a
-              style={{ textDecoration: "underline" }}
+              className="underline"
               href="https://www.kinopoisk.ru/film/4446102/?utm_referrer=www.google.com"
             >
               Kinopoisk
             </a>{" "}
             8.1,&nbsp;
             <a
-              style={{ textDecoration: "underline" }}
+              className="underline"
               href="https://www.imdb.com/title/tt15724292/"
             >
               IMDb 8.7
             </a>
             ,&nbsp; youtube premiere coming soon to&nbsp;
             <a
-              style={{ textDecoration: "underline" }}
+              className="underline"
               href="https://www.youtube.com/@schizoproletariat"
             >
               Schizoproletariat
@@ -69,11 +59,10 @@ export const Title = () => {
             channel
           </h4>
           <Image
-            src="/assets/footer_logo2.svg"
-            alt="logo"
-            width={290 * 0.4}
-            height={100 * 0.4}
-            unoptimized
+            src={logoImage}
+            alt="Schizoproletariat logo"
+            width={116}
+            height={40}
           />
         </div>
       </div>

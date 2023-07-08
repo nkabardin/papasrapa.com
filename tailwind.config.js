@@ -10,6 +10,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      chakra: ["Chakra Petch", "sans-serif"],
+    },
+    screens: {
+      tablet: "768px",
+    },
     extend: {},
   },
   plugins: [],
