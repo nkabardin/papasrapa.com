@@ -42,19 +42,6 @@ body {
   text-decoration: none;
 }
 
-.error {
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ff013c;
-  font-size: 1.5rem;
-  flex-direction: column;
-  text-shadow: #00e6f6 3px 3px;
-  padding: 0 1rem;
-  text-align: center;
-}
-
 .organize-button {
   color: white;
   border: 1px solid white;
