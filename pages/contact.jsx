@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useState } from "react";
-import styles from "../styles/Contact.module.css";
 import clsx from "clsx";
 
 const contactsRowClasses = "flex flex-col text-xl sm:flex-row";
@@ -86,13 +85,12 @@ export default function ContactPage() {
           <div>We contact with you as soon as possible.</div>
         </div>
       ) : (
-        <div className={styles.form}>
+        <div className="w-full flex flex-col p-4 m-auto max-w-[640px]">
           <form
             id="PapaSrapa"
             name="PapaSrapa"
             method="POST"
             onSubmit={handleSubmit}
-            className="w-full flex flex-col p-4 m-auto max-w-[640px]"
           >
             <fieldset className="m-0 p-0 border-none">
               <div className={formFieldClasses}>
