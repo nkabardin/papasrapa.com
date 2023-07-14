@@ -10,6 +10,7 @@ module.exports = {
       chakra: ["Chakra Petch", "sans-serif"],
     },
     screens: {
+      sm: "640px",
       tablet: "768px",
     },
     extend: {},
