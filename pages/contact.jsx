@@ -69,7 +69,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="w-full h-full min-h-screen bg-black">
+    <div className="w-full h-full min-h-screen bg-black overflow-hidden max-w-full">
       <header className="text-white flex items-center p-4">
         <div className="flex items-center ml-4 text-2xl text-white/60">
           <Link href="/" legacyBehavior>
