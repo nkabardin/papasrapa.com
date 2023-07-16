@@ -1,6 +1,6 @@
 import Image from "next/image";
-import posterImage from "../../public/assets/new_poster.png";
-import logoImage from "../../public/assets/footer_logo2.svg";
+import posterImage from "../public/assets/new_poster.png";
+import logoImage from "../public/assets/footer_logo2.svg";
 
 export const Title = () => {
   return (

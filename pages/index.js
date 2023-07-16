@@ -9,7 +9,7 @@ import { Poster } from "../sections/Poster";
 import { Footer } from "../sections/Footer";
 import { Team } from "../sections/Team";
 import { Screenings } from "../sections/Screenings";
-import { Title } from "../sections/Title/Title";
+import { Title } from "../sections/Title";
 import { OrganizeScreeningButton } from "../components/OrganizeScreeningButton";
 import Image from "next/image";
 import bgImage from "../public/assets/back_02.webp";
