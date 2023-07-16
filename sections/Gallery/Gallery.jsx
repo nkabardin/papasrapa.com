@@ -48,7 +48,7 @@ export const Gallery = () => {
             className="object-cover hover:cursor-pointer"
             fill
             quality={100}
-            unoptimized
+            placeholder="blur"
             alt="PapaSrapa backstage"
             onClick={() => openLightbox(0)}
           />
@@ -59,12 +59,16 @@ export const Gallery = () => {
               src={img1}
               className={smallImgClasses}
               alt="PapaSrapa backstage"
+              quality={100}
+              placeholder="blur"
               onClick={() => openLightbox(1)}
             />
             <Image
               src={img2}
               className={smallImgClasses}
               alt="PapaSrapa backstage"
+              quality={100}
+              placeholder="blur"
               onClick={() => openLightbox(2)}
             />
           </div>
@@ -73,12 +77,16 @@ export const Gallery = () => {
               src={img3}
               className={smallImgClasses}
               alt="PapaSrapa backstage"
+              quality={100}
+              placeholder="blur"
               onClick={() => openLightbox(3)}
             />
             <Image
               src={img4}
               className={smallImgClasses}
               alt="PapaSrapa backstage"
+              quality={100}
+              placeholder="blur"
               onClick={() => openLightbox(4)}
             />
           </div>
@@ -92,12 +100,16 @@ export const Gallery = () => {
               src={img5}
               className={smallImgClasses}
               alt="PapaSrapa backstage"
+              quality={100}
+              placeholder="blur"
               onClick={() => openLightbox(5)}
             />
             <Image
               src={img6}
               className={smallImgClasses}
               alt="PapaSrapa backstage"
+              quality={100}
+              placeholder="blur"
               onClick={() => openLightbox(6)}
             />
           </div>
@@ -106,12 +118,16 @@ export const Gallery = () => {
               src={img7}
               className={smallImgClasses}
               alt="PapaSrapa backstage"
+              quality={100}
+              placeholder="blur"
               onClick={() => openLightbox(7)}
             />
             <Image
               src={img8}
               className={smallImgClasses}
               alt="PapaSrapa backstage"
+              quality={100}
+              placeholder="blur"
               onClick={() => openLightbox(8)}
             />
           </div>
@@ -122,7 +138,7 @@ export const Gallery = () => {
             className="object-cover hover:cursor-pointer"
             fill
             quality={100}
-            unoptimized
+            placeholder="blur"
             alt="PapaSrapa backstage"
             onClick={() => openLightbox(9)}
           />
@@ -135,6 +151,7 @@ export const Gallery = () => {
             className={midImgClasses}
             fill
             quality={100}
+            placeholder="blur"
             alt="PapaSrapa backstage"
             onClick={() => openLightbox(10)}
           />
@@ -145,6 +162,7 @@ export const Gallery = () => {
             className={midImgClasses}
             fill
             quality={100}
+            placeholder="blur"
             alt="PapaSrapa backstage"
             onClick={() => openLightbox(11)}
           />
@@ -155,6 +173,7 @@ export const Gallery = () => {
             className={midImgClasses}
             fill
             quality={100}
+            placeholder="blur"
             alt="PapaSrapa backstage"
             onClick={() => openLightbox(12)}
           />

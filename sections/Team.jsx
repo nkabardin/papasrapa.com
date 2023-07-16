@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { menuLinks } from "../constants/menuLinks";
-import teamImg from "../../public/assets/team.jpg";
+import teamImg from "../public/assets/team.jpg";
 import { motion } from "framer-motion";
 
 export const Team = () => {
