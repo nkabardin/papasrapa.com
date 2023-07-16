@@ -1,10 +1,9 @@
 import Image from "next/image";
-import style from "./Footer.module.css";
 import logoImage from "../../public/assets/footer_logo2.svg";
 
 export const Footer = () => {
   return (
-    <footer className={style.container}>
+    <footer className="w-full h-[100px] pb-4 bg-black flex items-center justify-center">
       <Image
         src={logoImage}
         alt="Schizoproletariat logo"
