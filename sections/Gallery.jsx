@@ -1,21 +1,75 @@
 import Image from "next/image";
 import { useCallback, useState } from "react";
-import { images } from "./data";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { menuLinks } from "../../constants/menuLinks";
-import img0 from "../../public/gallery/1.jpg";
-import img1 from "../../public/gallery/2.jpg";
-import img2 from "../../public/gallery/3.jpg";
-import img3 from "../../public/gallery/4.jpg";
-import img4 from "../../public/gallery/5.jpg";
-import img5 from "../../public/gallery/6.jpg";
-import img6 from "../../public/gallery/7.jpg";
-import img7 from "../../public/gallery/8.jpg";
-import img8 from "../../public/gallery/9.jpg";
-import img9 from "../../public/gallery/10.jpg";
-import img10 from "../../public/gallery/11.jpg";
-import img11 from "../../public/gallery/12.jpg";
-import img12 from "../../public/gallery/13.jpg";
+import { menuLinks } from "../constants/menuLinks";
+import img0 from "../public/gallery/1.jpg";
+import img1 from "../public/gallery/2.jpg";
+import img2 from "../public/gallery/3.jpg";
+import img3 from "../public/gallery/4.jpg";
+import img4 from "../public/gallery/5.jpg";
+import img5 from "../public/gallery/6.jpg";
+import img6 from "../public/gallery/7.jpg";
+import img7 from "../public/gallery/8.jpg";
+import img8 from "../public/gallery/9.jpg";
+import img9 from "../public/gallery/10.jpg";
+import img10 from "../public/gallery/11.jpg";
+import img11 from "../public/gallery/12.jpg";
+import img12 from "../public/gallery/13.jpg";
+
+const images = [
+  {
+    source: "/gallery/1.jpg",
+    caption: "PapaSrapa backstage",
+  },
+  {
+    source: "/gallery/2.jpg",
+    caption: "PapaSrapa backstage",
+  },
+  {
+    source: "/gallery/3.jpg",
+    caption: "PapaSrapa backstage",
+  },
+  {
+    source: "/gallery/4.jpg",
+    caption: "PapaSrapa backstage",
+  },
+  {
+    source: "/gallery/5.jpg",
+    caption: "PapaSrapa backstage",
+  },
+  {
+    source: "/gallery/6.jpg",
+    caption: "PapaSrapa backstage",
+  },
+  {
+    source: "/gallery/7.jpg",
+    caption: "PapaSrapa backstage",
+  },
+  {
+    source: "/gallery/8.jpg",
+    caption: "PapaSrapa backstage",
+  },
+  {
+    source: "/gallery/9.jpg",
+    caption: "PapaSrapa backstage",
+  },
+  {
+    source: "/gallery/10.jpg",
+    caption: "PapaSrapa backstage",
+  },
+  {
+    source: "/gallery/11.jpg",
+    caption: "PapaSrapa backstage",
+  },
+  {
+    source: "/gallery/12.jpg",
+    caption: "PapaSrapa backstage",
+  },
+  {
+    source: "/gallery/13.jpg",
+    caption: "PapaSrapa backstage",
+  },
+];
 
 export const Gallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
