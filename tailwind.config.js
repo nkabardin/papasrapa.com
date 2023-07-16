@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       chakra: ["Chakra Petch", "sans-serif"],
+      opinion: ["Opinion Pro", "sans-serif"],
     },
     screens: {
       sm: "640px",
