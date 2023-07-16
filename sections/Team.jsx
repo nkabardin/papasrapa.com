@@ -1,15 +1,14 @@
-import style from "./Team.module.css";
 import Image from "next/image";
-import { menuLinks } from "../../constants/menuLinks";
+import { menuLinks } from "../constants/menuLinks";
 import teamImg from "../../public/assets/team.jpg";
 import { motion } from "framer-motion";
 
 export const Team = () => {
   return (
-    <section className={style.container} id={menuLinks.TEAM}>
-      <div className={style.wrapper}>
+    <section className="bg-black/70 w-full px-8 text-white" id={menuLinks.TEAM}>
+      <div className="bg-black/60 max-w-[1200px] flex flex-col justify-center m-auto p-8 w-full">
         <motion.div
-          className={style.title}
+          className="text-5xl font-bold font-chakra z-40 align-left uppercase pb-6"
           initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
@@ -19,8 +18,8 @@ export const Team = () => {
         >
           The Team
         </motion.div>
-        <div className={style.content}>
-          <div className={style.photo}>
+        <div className="flex w-full flex-col w960:flex-row">
+          <div className="w-[470px] w960:min-w-[400px] min-w-[0] max-w-full w960:max-w-[470px] self-center w960:self-start">
             <Image
               src={teamImg}
               alt="Konstantin Ivanov & Nikita Kabardin"
@@ -29,12 +28,12 @@ export const Team = () => {
               placeholder="blur"
               quality={100}
             />
-            <div className={style.team_names}>
-              <div className={style.name}>Konstantin Ivanov</div>
-              <div className={style.name}>Nikita Kabardin</div>
+            <div className="flex w-[400px] justify-around items-center text-xl mt-2">
+              <div>Konstantin Ivanov</div>
+              <div>Nikita Kabardin</div>
             </div>
           </div>
-          <div className={style.text}>
+          <div className="text-xl mt-2 ml-0 py-4 bg-black max-w-full flex-grow flex-shrink w960:mt-0 w960:ml-8 w960:max-w-[640px]">
             <motion.p
               initial={{ x: 400, opacity: 0 }}
               whileInView={{
