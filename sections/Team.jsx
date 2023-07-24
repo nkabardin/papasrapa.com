@@ -28,7 +28,7 @@ export const Team = () => {
               placeholder="blur"
               quality={100}
             />
-            <div className="flex w-[400px] justify-around items-center text-xl mt-2">
+            <div className="flex width max-w-[400px] justify-around items-center text-xl mt-2">
               <div>Konstantin Ivanov</div>
               <div>Nikita Kabardin</div>
             </div>
