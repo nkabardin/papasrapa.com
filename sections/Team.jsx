@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 export const Team = () => {
   return (
-    <section className="bg-black/70 w-full px-8 text-white" id={menuLinks.TEAM}>
+    <section
+      className="bg-black/70 w-full w960:px-8 text-white"
+      id={menuLinks.TEAM}
+    >
       <div className="bg-black/60 max-w-[1200px] flex flex-col justify-center m-auto p-8 w-full">
         <motion.div
           className="text-5xl font-bold font-chakra z-40 align-left uppercase pb-6"
@@ -28,14 +31,14 @@ export const Team = () => {
               placeholder="blur"
               quality={100}
             />
-            <div className="flex w-[400px] justify-around items-center text-xl mt-2">
-              <div>Konstantin Ivanov</div>
-              <div>Nikita Kabardin</div>
+            <div className="flex w-auto max-w-[400px] gap-4 justify-around items-center text-xl mt-2">
+              <div className="text-center">Konstantin Ivanov</div>
+              <div className="text-center">Nikita Kabardin</div>
             </div>
           </div>
           <div className="text-xl mt-2 ml-0 py-4 bg-black max-w-full flex-grow flex-shrink w960:mt-0 w960:ml-8 w960:max-w-[640px]">
             <motion.p
-              initial={{ x: 400, opacity: 0 }}
+              initial={{ x: 200, opacity: 0 }}
               whileInView={{
                 x: 0,
                 opacity: 1,
@@ -50,7 +53,7 @@ export const Team = () => {
               underground culture, they called themselves Schizoproletariat.
             </motion.p>
             <motion.p
-              initial={{ x: 400, opacity: 0 }}
+              initial={{ x: 200, opacity: 0 }}
               whileInView={{
                 x: 0,
                 opacity: 1,
@@ -63,7 +66,7 @@ export const Team = () => {
               filming duties in dozens of films in Russia.
             </motion.p>
             <motion.p
-              initial={{ x: 400, opacity: 0 }}
+              initial={{ x: 200, opacity: 0 }}
               whileInView={{
                 x: 0,
                 opacity: 1,
@@ -77,14 +80,14 @@ export const Team = () => {
               Battlefield).
             </motion.p>
             <motion.p
-              style={{ padding: "32px 0px" }}
-              initial={{ x: -400, opacity: 0 }}
+              initial={{ x: -200, opacity: 0 }}
               whileInView={{
                 x: 0,
                 opacity: 1,
-                transition: { delay: 0.4, type: "spring", damping: 20 },
+                transition: { delay: 0.3, type: "spring", damping: 20 },
               }}
               viewport={{ once: true }}
+              className="px-0 py-8"
             >
               <a
                 href={`#${menuLinks.CREDITS}`}

@@ -10,7 +10,7 @@ export const Poster = () => {
           <div className={style.text} id={menuLinks.STORY}>
             <div className={style.title}>The Movie</div>
             <motion.p
-              initial={{ x: 400, opacity: 0 }}
+              initial={{ x: 200, opacity: 0 }}
               whileInView={{
                 x: 0,
                 opacity: 1,
@@ -25,7 +25,7 @@ export const Poster = () => {
               avant-garde and savage vigor of its preeminent performer.
             </motion.p>
             <motion.p
-              initial={{ x: -400, opacity: 0 }}
+              initial={{ x: -200, opacity: 0 }}
               whileInView={{
                 x: 0,
                 opacity: 1,
@@ -42,7 +42,7 @@ export const Poster = () => {
               Kulbin.
             </motion.p>
             <motion.p
-              initial={{ x: 400, opacity: 0 }}
+              initial={{ x: 200, opacity: 0 }}
               whileInView={{
                 x: 0,
                 opacity: 1,
