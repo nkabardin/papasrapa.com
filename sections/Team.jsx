@@ -38,7 +38,7 @@ export const Team = () => {
           </div>
           <div className="text-xl mt-2 ml-0 py-4 bg-black max-w-full flex-grow flex-shrink w960:mt-0 w960:ml-8 w960:max-w-[640px]">
             <motion.p
-              initial={{ x: 400, opacity: 0 }}
+              initial={{ x: 200, opacity: 0 }}
               whileInView={{
                 x: 0,
                 opacity: 1,
@@ -53,7 +53,7 @@ export const Team = () => {
               underground culture, they called themselves Schizoproletariat.
             </motion.p>
             <motion.p
-              initial={{ x: 400, opacity: 0 }}
+              initial={{ x: 200, opacity: 0 }}
               whileInView={{
                 x: 0,
                 opacity: 1,
@@ -66,7 +66,7 @@ export const Team = () => {
               filming duties in dozens of films in Russia.
             </motion.p>
             <motion.p
-              initial={{ x: 400, opacity: 0 }}
+              initial={{ x: 200, opacity: 0 }}
               whileInView={{
                 x: 0,
                 opacity: 1,
@@ -80,14 +80,14 @@ export const Team = () => {
               Battlefield).
             </motion.p>
             <motion.p
-              style={{ padding: "32px 0px" }}
-              initial={{ x: -400, opacity: 0 }}
+              initial={{ x: -200, opacity: 0 }}
               whileInView={{
                 x: 0,
                 opacity: 1,
-                transition: { delay: 0.4, type: "spring", damping: 20 },
+                transition: { delay: 0.3, type: "spring", damping: 20 },
               }}
               viewport={{ once: true }}
+              className="px-0 py-8"
             >
               <a
                 href={`#${menuLinks.CREDITS}`}
