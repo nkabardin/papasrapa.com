@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import clsx from "clsx";
+import { motion } from "framer-motion";
 
-const contactsRowClasses = "flex flex-col text-xl sm:flex-row";
+const contactsRowClasses = "flex flex-col sm:flex-row";
 const contactsLabelClasses = "basis-1/2 text-base mb-4 sm:mb-0 sm:text-xl";
-const contactsEmailClasses = "text-white ml-2 self-end text-lg sm:text-xl";
+const contactsEmailClasses = "text-white ml-2 self-end text-xl sm:text-2xl";
 const formFieldClasses = "flex flex-col";
 const formLabelClasses = "text-white/75 text-xl";
 const formInputClasses =
@@ -13,6 +14,29 @@ const formInputClasses =
 export default function ContactPage() {
   const [isSubmited, setIsSubmited] = useState(false);
   const [isError, setIsError] = useState(false);
+  const form = {
+    visible: {
+      opacity: 1,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.1,
+      },
+    },
+    hidden: {
+      opacity: 0,
+      transition: {
+        when: "afterChildren",
+      },
+    },
+  };
+  const items = {
+    visible: {
+      opacity: 1,
+      x: 1,
+      transition: { type: "spring", damping: 20 },
+    },
+    hidden: { opacity: 0, x: 400 },
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -45,14 +69,14 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="w-full h-full min-h-screen bg-black">
+    <div className="w-full h-full min-h-screen bg-black overflow-hidden max-w-full">
       <header className="text-white flex items-center p-4">
         <div className="flex items-center ml-4 text-2xl text-white/60">
           <Link href="/" legacyBehavior>
             <a>← back</a>
           </Link>
         </div>
-        <h1 className="flex-auto text-xl mr-4 text-right sm:mr-0 sm:text-center">
+        <h1 className="flex-auto text-xl mr-4 text-right sm:mr-0 sm:text-center uppercase">
           Contact us
         </h1>
       </header>
@@ -85,7 +109,12 @@ export default function ContactPage() {
           <div>We contact with you as soon as possible.</div>
         </div>
       ) : (
-        <div className="w-full flex flex-col p-4 m-auto max-w-[640px]">
+        <motion.div
+          className="w-full flex flex-col p-4 m-auto max-w-[640px]"
+          initial="hidden"
+          animate="visible"
+          variants={form}
+        >
           <form
             id="PapaSrapa"
             name="PapaSrapa"
@@ -93,7 +122,7 @@ export default function ContactPage() {
             onSubmit={handleSubmit}
           >
             <fieldset className="m-0 p-0 border-none">
-              <div className={formFieldClasses}>
+              <motion.div className={formFieldClasses} variants={items}>
                 <label htmlFor="name" className={formLabelClasses}>
                   Name *
                 </label>
@@ -104,9 +133,9 @@ export default function ContactPage() {
                   required
                   className={clsx(formInputClasses)}
                 />
-              </div>
+              </motion.div>
 
-              <div className={formFieldClasses}>
+              <motion.div className={formFieldClasses} variants={items}>
                 <label htmlFor="email" className={formLabelClasses}>
                   Email *
                 </label>
@@ -117,9 +146,9 @@ export default function ContactPage() {
                   required
                   className={clsx(formInputClasses)}
                 />
-              </div>
+              </motion.div>
 
-              <div className={formFieldClasses}>
+              <motion.div className={formFieldClasses} variants={items}>
                 <label htmlFor="subject" className={formLabelClasses}>
                   Subject *
                 </label>
@@ -130,9 +159,9 @@ export default function ContactPage() {
                   required
                   className={clsx(formInputClasses)}
                 />
-              </div>
+              </motion.div>
 
-              <div className={formFieldClasses}>
+              <motion.div className={formFieldClasses} variants={items}>
                 <label htmlFor="message" className={formLabelClasses}>
                   Message *
                 </label>
@@ -142,16 +171,16 @@ export default function ContactPage() {
                   required
                   className={clsx(formInputClasses, "min-h-[200px]")}
                 />
-              </div>
+              </motion.div>
             </fieldset>
 
-            <div className="mb-4 mt-8">
+            <motion.div className="mb-4 mt-8" variants={items}>
               <button type="submit" className="contact_button">
                 Submit
               </button>
-            </div>
+            </motion.div>
           </form>
-        </div>
+        </motion.div>
       )}
     </div>
   );
