@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "clsx": "^1.2.1",
+    "country-flag-icons": "^1.5.7",
     "next": "13.2.4",
     "prettier": "^2.5.1",
     "react": "^18.2.0",

@@ -32,3 +32,12 @@
 .item span {
     font-weight: normal;
 }
+
+.flag {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+    margin-bottom: -2px;
+}
