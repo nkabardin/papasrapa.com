@@ -253,6 +253,12 @@ const SCREENINGS = [
     city: "Yangshuo",
     countryCode: "CN",
   },
+  {
+    date: "October 7, 2023",
+    venue: "VinylCafé",
+    city: "Lanzhou",
+    countryCode: "CN",
+  }
 ];
 
 SCREENINGS.reverse();
@@ -261,7 +267,7 @@ export const Screenings = () => {
   return (
     <section className={style.container} id="screenings">
       <h3>Screenings</h3>
-      <ul style={{ padding: 0 }}>
+      <ul style={{ padding: "12px 0 0 0" }}>
         {SCREENINGS.map((screening) => (
           <li
             key={`${screening.date}_${screening.venue}`}
@@ -275,7 +281,7 @@ export const Screenings = () => {
                   {React.createElement(COUNTRIES[screening.countryCode].flag, { title: COUNTRIES[screening.countryCode].name })}
                 </div>
               ) : null
-            } &nbsp;
+            } &nbsp;/&nbsp;
             {screening.link ? (
               <a href={screening.link} target="_blank" rel="noreferrer">
                 {screening.venue}
