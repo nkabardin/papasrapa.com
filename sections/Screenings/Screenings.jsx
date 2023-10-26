@@ -258,6 +258,12 @@ const SCREENINGS = [
     venue: "VinylCafé",
     city: "Lanzhou",
     countryCode: "CN",
+  },
+  {
+    date: "November 4-5, 2023",
+    venue: "FUGUI",
+    city: "Ordos, Inner Mongolia",
+    countryCode: "CN",
   }
 ];
 
