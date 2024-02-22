@@ -32,7 +32,7 @@ export const Title = () => {
             >
               LUFF
             </a>
-            ,&nbsp; screened in Netherlands, Austria, Switzerland, China,
+            ,&nbsp; screened in France, Italy, Belgium, Netherlands, Austria, Switzerland, China,
             Russia, Poland, Georgia, Montenegro.
           </h3>
           <h4 className="m-[revert]">
@@ -42,12 +42,12 @@ export const Title = () => {
             >
               Kinopoisk
             </a>{" "}
-            8.1,&nbsp;
+            8.0,&nbsp;
             <a
               className="underline"
               href="https://www.imdb.com/title/tt15724292/"
             >
-              IMDb 8.7
+              IMDb 8.6
             </a>
             ,&nbsp; youtube premiere coming soon to&nbsp;
             <a

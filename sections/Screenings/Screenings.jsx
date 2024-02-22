@@ -1,6 +1,6 @@
 import style from "./Screenings.module.css";
 import React from "react";
-import { RU, CH, NL, PL, ME, GE, AT, CN} from 'country-flag-icons/react/3x2'
+import { RU, CH, NL, PL, ME, GE, AT, CN, BE, IT, FR } from 'country-flag-icons/react/3x2'
 
 
 const COUNTRIES = {
@@ -36,7 +36,19 @@ const COUNTRIES = {
     name: "China",
     flag: CN
   },
-} 
+  BE: {
+    name: "Belgium",
+    flag: BE
+  },
+  IT: {
+    name: "Italy",
+    flag: IT
+  },
+  FR: {
+    name: "France",
+    flag: FR
+  }
+}
 
 const SCREENINGS = [
   {
@@ -264,7 +276,31 @@ const SCREENINGS = [
     venue: "FUGUI",
     city: "Ordos, Inner Mongolia",
     countryCode: "CN",
-  }
+  },
+  {
+    date: "January 26, 2024",
+    venue: "Terzo Piano Autogestito",
+    city: "Naples",
+    countryCode: "IT",
+  },
+  {
+    date: "January 28, 2024",
+    venue: "Centro Sociale Autogestito Next-Emerson",
+    city: "Florence",
+    countryCode: "IT",
+  },
+  {
+    date: "February 9, 2024",
+    venue: "MONA",
+    city: "Brussels",
+    countryCode: "BE",
+  },
+  {
+    date: "February 9, 2024",
+    venue: "Café de Paris",
+    city: "Paris",
+    countryCode: "FR",
+  },
 ];
 
 SCREENINGS.reverse();
@@ -272,7 +308,7 @@ SCREENINGS.reverse();
 export const Screenings = () => {
   return (
     <section className={style.container} id="screenings">
-      <h3>Screenings</h3>
+      <h3>Screenings <span style={{ opacity: "0.5" }}>({SCREENINGS.length} total)</span></h3>
       <ul style={{ padding: "12px 0 0 0" }}>
         {SCREENINGS.map((screening) => (
           <li
@@ -300,7 +336,7 @@ export const Screenings = () => {
                 . <span> {screening.comment}</span>
               </>
             )}
-            
+
           </li>
         ))}
       </ul>
