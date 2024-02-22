@@ -282,24 +282,28 @@ const SCREENINGS = [
     venue: "Terzo Piano Autogestito",
     city: "Naples",
     countryCode: "IT",
+    comment: "Screening + Noise performances"
   },
   {
     date: "January 28, 2024",
     venue: "Centro Sociale Autogestito Next-Emerson",
     city: "Florence",
     countryCode: "IT",
+    comment: "Screening + Noise performances"
   },
   {
     date: "February 9, 2024",
     venue: "MONA",
     city: "Brussels",
     countryCode: "BE",
+    comment: "Screening + Noise performances"
   },
   {
-    date: "February 9, 2024",
+    date: "February 10, 2024",
     venue: "Café de Paris",
     city: "Paris",
     countryCode: "FR",
+    comment: "Screening + Noise performances"
   },
 ];
 
@@ -333,7 +337,7 @@ export const Screenings = () => {
             )}
             {screening.comment && (
               <>
-                . <span> {screening.comment}</span>
+                . <span style={{ fontSize: "10px ", marginLeft: "5px", }}> {screening.comment}</span>
               </>
             )}
 
