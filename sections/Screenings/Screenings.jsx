@@ -1,6 +1,6 @@
 import style from "./Screenings.module.css";
 import React from "react";
-import { RU, CH, NL, PL, ME, GE, AT, CN, BE, IT, FR, US } from 'country-flag-icons/react/3x2'
+import { RU, CH, NL, PL, ME, GE, AT, CN, BE, IT, FR, US, RS } from 'country-flag-icons/react/3x2'
 
 
 const COUNTRIES = {
@@ -51,6 +51,10 @@ const COUNTRIES = {
   US: {
     name: "USA",
     flag: US
+  },
+  SR: {
+    name: "Serbia",
+    flag: RS
   }
 }
 
@@ -312,9 +316,16 @@ const SCREENINGS = [
   {
     date: "September 18, 2024",
     venue: "VisArt Video",
-    city: "Charlotte / North Carolina",
+    city: "Charlotte, North Carolina",
     countryCode: "US",
-    comment: "Screening + QA on Zoom + live performance of Leo Wolf"
+    comment: "Screening + Q&A on Zoom + Live Performance of Leo Wolf"
+  },
+  {
+    date: "October 6, 2024",
+    venue: "RAY bar",
+    city: "Novi Sad",
+    countryCode: "SR",
+    comment: "Screening + Q&A on Zoom + Live Performance of Ilya Belorukov"
   }
 ];
 
@@ -330,15 +341,19 @@ export const Screenings = () => {
             key={`${screening.date}_${screening.venue}`}
             className={style.item}
           >
-            {screening.date}&nbsp;/&nbsp;
-            {screening.city}
             {
               screening.countryCode && COUNTRIES[screening.countryCode] ? (
                 <div className={style.flag}>
-                  {React.createElement(COUNTRIES[screening.countryCode].flag, { title: COUNTRIES[screening.countryCode].name })}
+                  {React.createElement(COUNTRIES[screening.countryCode].flag, {
+                    title: COUNTRIES[screening.countryCode].name,
+                    style: { width: "20px", height: "20px" }
+                  })}
                 </div>
               ) : null
-            } &nbsp;/&nbsp;
+            }
+            {screening.date}&nbsp;/&nbsp;
+            {screening.city}
+             &nbsp;/&nbsp;
             {screening.link ? (
               <a href={screening.link} target="_blank" rel="noreferrer">
                 {screening.venue}
@@ -348,7 +363,7 @@ export const Screenings = () => {
             )}
             {screening.comment && (
               <>
-                . <span style={{ fontSize: "10px ", marginLeft: "5px", }}> {screening.comment}</span>
+                <span style={{ fontSize: "10px ", marginLeft: "5px", }}> {screening.comment}</span>
               </>
             )}
 
