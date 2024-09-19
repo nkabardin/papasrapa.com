@@ -1,6 +1,6 @@
 import style from "./Screenings.module.css";
 import React from "react";
-import { RU, CH, NL, PL, ME, GE, AT, CN, BE, IT, FR } from 'country-flag-icons/react/3x2'
+import { RU, CH, NL, PL, ME, GE, AT, CN, BE, IT, FR, US } from 'country-flag-icons/react/3x2'
 
 
 const COUNTRIES = {
@@ -47,6 +47,10 @@ const COUNTRIES = {
   FR: {
     name: "France",
     flag: FR
+  },
+  US: {
+    name: "USA",
+    flag: US
   }
 }
 
@@ -305,6 +309,13 @@ const SCREENINGS = [
     countryCode: "FR",
     comment: "Screening + Noise performances"
   },
+  {
+    date: "September 18, 2024",
+    venue: "VisArt Video",
+    city: "Charlotte / North Carolina",
+    countryCode: "US",
+    comment: "Screening + QA on Zoom + live performance of Leo Wolf"
+  }
 ];
 
 SCREENINGS.reverse();
