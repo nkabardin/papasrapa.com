@@ -326,6 +326,14 @@ const SCREENINGS = [
     city: "Novi Sad",
     countryCode: "SR",
     comment: "Screening + Q&A on Zoom + Live Performance of Ilya Belorukov"
+  },
+  {
+    date: "February 21, 2025",
+    venue: "L'Armande asbl",
+    city: "Liège",
+    countryCode: "BE",
+    comment: "Screening + performances by Dolphin Hospital and Maria Komarova",
+    link: "https://www.facebook.com/events/1556553428359019/"
   }
 ];
 
