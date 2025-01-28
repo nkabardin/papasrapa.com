@@ -47,7 +47,7 @@ export const Title = () => {
               className="underline"
               href="https://www.imdb.com/title/tt15724292/"
             >
-              IMDb 8.5
+              IMDb 8.3
             </a>
             ,&nbsp; youtube premiere coming soon to&nbsp;
             <a
