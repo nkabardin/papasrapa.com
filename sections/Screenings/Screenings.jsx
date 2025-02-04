@@ -334,7 +334,24 @@ const SCREENINGS = [
     countryCode: "BE",
     comment: "Screening + performances by Dolphin Hospital and Maria Komarova",
     link: "https://www.facebook.com/events/1556553428359019/"
-  }
+  },
+  ,
+  {
+    date: "March 22, 2025",
+    venue: "Libera Collina di Castello",
+    city: "Genoa",
+    countryCode: "IT",
+    comment: "Screening + live performances / Noisefest Vol. 2",
+    link: "https://www.facebook.com/liberacollinadicastello/"
+  },
+  {
+    date: "March 28, 2025",
+    venue: "VisArt Video",
+    city: "Charlotte, North Carolina",
+    countryCode: "US",
+    comment: "Screening + Q&A on Zoom + Live Performance of Leo Wolf",
+    link: "https://visartvideo.org/events/papa-srapa-a-trip-to-the-very-heart-of-noise-avant-garde-music/"
+  },
 ];
 
 SCREENINGS.reverse();
