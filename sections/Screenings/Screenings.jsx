@@ -335,7 +335,6 @@ const SCREENINGS = [
     comment: "Screening + performances by Dolphin Hospital and Maria Komarova",
     link: "https://www.facebook.com/events/1556553428359019/"
   },
-  ,
   {
     date: "March 22, 2025",
     venue: "Libera Collina di Castello",
