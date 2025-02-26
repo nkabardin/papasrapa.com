@@ -336,6 +336,14 @@ const SCREENINGS = [
     link: "https://www.facebook.com/events/1556553428359019/"
   },
   {
+    date: "March 10, 2025",
+    venue: "Brigade Rouge, Poésie Noire",
+    city: "Rouen",
+    countryCode: "FR",
+    comment: "Online festival screening (available 10-16 march 2026)",
+    link: "https://www.brigaderougepoesienoire.com/"
+  },
+  {
     date: "March 22, 2025",
     venue: "Libera Collina di Castello",
     city: "Genoa",
