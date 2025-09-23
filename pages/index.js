@@ -13,45 +13,49 @@ import { Title } from "../sections/Title";
 import { OrganizeScreeningButton } from "../components/OrganizeScreeningButton";
 import Image from "next/image";
 import bgImage from "../public/assets/back_02.webp";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   return (
-    <div className="font-chakra h-screen overflow-x-hidden">
-      <div className="background-wrap">
-        <Image
-          alt="Papa Srapa"
-          src={bgImage}
-          placeholder="blur"
-          quality={75}
-          fill
-          sizes="100vw"
-          style={{
-            objectFit: "cover",
-          }}
-        />
-      </div>
+    <>
+      <Analytics />
+      <div className="font-chakra h-screen overflow-x-hidden">
+        <div className="background-wrap">
+          <Image
+            alt="Papa Srapa"
+            src={bgImage}
+            placeholder="blur"
+            quality={75}
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: "cover",
+            }}
+          />
+        </div>
 
-      <div className={styles.container}>
-        <Head />
-        <AppBar />
-        <Title />
-        <main className={styles.main}>
-          <Hero />
-          <Screenings />
-          <div>
-            <OrganizeScreeningButton />
-          </div>
-          <Poster />
-          <Team />
-          <Gallery />
-          <div>
-            <OrganizeScreeningButton />
-          </div>
-          <Credits />
-        </main>
+        <div className={styles.container}>
+          <Head />
+          <AppBar />
+          <Title />
+          <main className={styles.main}>
+            <Hero />
+            <Screenings />
+            <div>
+              <OrganizeScreeningButton />
+            </div>
+            <Poster />
+            <Team />
+            <Gallery />
+            <div>
+              <OrganizeScreeningButton />
+            </div>
+            <Credits />
+          </main>
 
-        <Footer />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -13,7 +13,8 @@
   --max-width: 1200px;
   --font-pt-serif: "Chakra Petch", sans-serif;
   --font-akrobat: "Chakra Petch";
-  --shadows-md: 0 4px 6px -1px rgba(255, 255, 255, 0.1),
+  --shadows-md:
+    0 4px 6px -1px rgba(255, 255, 255, 0.1),
     0 2px 4px -1px rgba(255, 255, 255, 0.06);
 }
 
