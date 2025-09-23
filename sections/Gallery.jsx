@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useCallback, useState } from "react";
-import Carousel, { Modal, ModalGateway } from "react-images";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { menuLinks } from "../constants/menuLinks";
 import img0 from "../public/gallery/1.jpg";
 import img1 from "../public/gallery/2.jpg";
@@ -234,18 +235,66 @@ export const Gallery = () => {
         </div>
       </div>
 
-      <ModalGateway>
-        {viewerIsOpen && (
-          <Modal onClose={closeLightbox}>
+      {viewerIsOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4" onClick={closeLightbox}>
+          <div className="w-full max-w-4xl carousel-container" onClick={(e) => e.stopPropagation()}>
+            <button 
+              className="absolute top-4 right-4 text-white text-2xl z-50 bg-black bg-opacity-50 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-70"
+              onClick={closeLightbox}
+            >
+              ×
+            </button>
+            <style jsx global>{`
+              .carousel-container .carousel .slide {
+                background: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 80vh;
+              }
+              .carousel-container .carousel .control-arrow {
+                font-size: 24px;
+                background: rgba(0, 0, 0, 0.5);
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 20px;
+              }
+              .carousel-container .carousel .control-arrow:hover {
+                background: rgba(0, 0, 0, 0.7);
+              }
+              .carousel-container .carousel .legend {
+                background: rgba(0, 0, 0, 0.7);
+                opacity: 1;
+                bottom: 0;
+                margin-bottom: 0;
+              }
+            `}</style>
             <Carousel
-              currentIndex={currentImage}
-              views={images.map((item) => ({
-                ...item,
-              }))}
-            />
-          </Modal>
-        )}
-      </ModalGateway>
+              selectedItem={currentImage}
+              showArrows={true}
+              showStatus={false}
+              showIndicators={true}
+              infiniteLoop={true}
+              useKeyboardArrows={true}
+              dynamicHeight={true}
+              emulateTouch={true}
+            >
+              {images.map((item, index) => (
+                <div key={index} className="h-full">
+                  <img src={item.source} alt={item.caption} className="max-h-[80vh] object-contain mx-auto" />
+                  {item.caption && (
+                    <p className="legend">{item.caption}</p>
+                  )}
+                </div>
+              ))}
+            </Carousel>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
