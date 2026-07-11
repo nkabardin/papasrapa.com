@@ -14,6 +14,7 @@ import {
   FR,
   US,
   RS,
+  IL,
 } from "country-flag-icons/react/3x2";
 
 const COUNTRIES = {
@@ -68,6 +69,10 @@ const COUNTRIES = {
   SR: {
     name: "Serbia",
     flag: RS,
+  },
+  IL: {
+    name: "Israel",
+    flag: IL,
   },
 };
 
@@ -371,6 +376,20 @@ const SCREENINGS = [
     countryCode: "US",
     comment: "Screening + Q&A on Zoom + Live Performance of Leo Wolf",
     link: "https://visartvideo.org/events/papa-srapa-a-trip-to-the-very-heart-of-noise-avant-garde-music/",
+  },
+  {
+    date: "July 9, 2026",
+    venue: "Martef 23 (מרתף 23)",
+    city: "Haifa",
+    countryCode: "IL",
+    comment: "Screening + Noise live / Imaginary Forces Events",
+  },
+  {
+    date: "July 30, 2026",
+    venue: "Besarabia",
+    city: "Jerusalem",
+    countryCode: "IL",
+    comment: "Screening + Noise live",
   },
 ];
 
