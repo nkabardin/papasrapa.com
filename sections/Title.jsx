@@ -33,8 +33,8 @@ export const Title = () => {
               LUFF
             </a>
             ,&nbsp; screened in France, Italy, USA, Belgium, Netherlands,
-            Austria, Switzerland, China, Serbia, Russia, Poland, Georgia,
-            Montenegro.
+            Austria, Switzerland, China, Serbia, Israel, Russia, Poland,
+            Georgia, Montenegro.
           </h3>
           <h4 className="m-[revert]">
             <a
