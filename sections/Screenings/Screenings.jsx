@@ -15,6 +15,7 @@ import {
   US,
   RS,
   IL,
+  CA,
 } from "country-flag-icons/react/3x2";
 
 const COUNTRIES = {
@@ -73,6 +74,10 @@ const COUNTRIES = {
   IL: {
     name: "Israel",
     flag: IL,
+  },
+  CA: {
+    name: "Canada",
+    flag: CA,
   },
 };
 
@@ -390,6 +395,15 @@ const SCREENINGS = [
     city: "Jerusalem",
     countryCode: "IL",
     comment: "Screening + Noise live",
+  },
+  {
+    date: "November 13, 2026",
+    venue: "Patrick Coulombe’s workspace",
+    city: "Montréal",
+    countryCode: "CA",
+    comment:
+      "Private screening / Pure Data community / 20:30 (doors 18:00) / RSVP required",
+    link: "https://papasrapa.workinprogress.ca/",
   },
 ];
 
