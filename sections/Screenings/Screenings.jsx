@@ -398,7 +398,7 @@ const SCREENINGS = [
   },
   {
     date: "November 13, 2026",
-    venue: "Patrick Coulombe’s workspace",
+    venue: "WORK IN PROGRESS",
     city: "Montréal",
     countryCode: "CA",
     comment:
